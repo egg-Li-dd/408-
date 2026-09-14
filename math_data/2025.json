@@ -1,0 +1,413 @@
+[
+  {
+    "id": "math2-2025-1",
+    "year": 2025,
+    "type": "choice",
+    "number": 1,
+    "subject": "考研数学二",
+    "stem": "设函数 $z=z(x,y)$ 由 $z+\\ln z-\\int_{y}^{x} e^{-t^{2}}\\,dt=0$ 确定，则 $\\dfrac{\\partial z}{\\partial x}+\\dfrac{\\partial z}{\\partial y}=$",
+    "options": {
+      "A": "$\\dfrac{z}{z+1}\\left(e^{-x^{2}}-e^{-y^{2}}\\right)$.",
+      "B": "$\\dfrac{z}{z+1}\\left(e^{-x^{2}}+e^{-y^{2}}\\right)$.",
+      "C": "$-\\dfrac{z}{z+1}\\left(e^{-x^{2}}-e^{-y^{2}}\\right)$.",
+      "D": "$-\\dfrac{z}{z+1}\\left(e^{-x^{2}}+e^{-y^{2}}\\right)$."
+    },
+    "answer": "A",
+    "analysis": "$z+\\ln z-\\int_{y}^{x} e^{-t^{2}}\\,dt=0$，分别对 $x,y$ 求偏导，得：$\\dfrac{\\partial z}{\\partial x}+\\dfrac{1}{z}\\dfrac{\\partial z}{\\partial x}-e^{-x^{2}}=0\\Rightarrow \\dfrac{\\partial z}{\\partial x}=\\dfrac{z}{z+1}e^{-x^{2}}$；$\\dfrac{\\partial z}{\\partial y}+\\dfrac{1}{z}\\dfrac{\\partial z}{\\partial y}+e^{-y^{2}}=0\\Rightarrow \\dfrac{\\partial z}{\\partial y}=\\dfrac{-z}{z+1}e^{-y^{2}}$。故 $\\dfrac{\\partial z}{\\partial x}+\\dfrac{\\partial z}{\\partial y}=\\dfrac{z}{z+1}\\left(e^{-x^{2}}-e^{-y^{2}}\\right)$。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-2",
+    "year": 2025,
+    "type": "choice",
+    "number": 2,
+    "subject": "考研数学二",
+    "stem": "已知函数 $f(x)=\\int_{0}^{x} e^{t^{2}}\\sin t\\,dt$，$g(x)=\\int_{0}^{x} e^{t^{2}}\\,t\\,\\sin^{2}x$，则",
+    "options": {
+      "A": "$x=0$ 是 $f(x)$ 的极值点，也是 $g(x)$ 的极值点.",
+      "B": "$x=0$ 是 $f(x)$ 的极值点，$(0,0)$ 是曲线 $y=g(x)$ 的拐点.",
+      "C": "$x=0$ 是 $f(x)$ 的极值点，$(0,0)$ 是曲线 $y=f(x)$ 的拐点.",
+      "D": "$(0,0)$ 是曲线 $y=f(x)$ 的拐点，$(0,0)$ 也是曲线 $y=g(x)$ 的拐点."
+    },
+    "answer": "B",
+    "analysis": "$f'(x)=e^{x^{2}}\\sin x$，$f''(x)=2xe^{x^{2}}\\sin x+e^{x^{2}}\\cos x$。$f'(0)=0$，$f''(0)=1>0$，故 $x=0$ 是 $f(x)$ 的极值点。$g'(x)=e^{x^{2}}\\sin^{2}x+\\sin 2x\\int_{0}^{x}e^{t^{2}}\\,dt$，$g''(x)=e^{x^{2}}\\sin 2x+2xe^{x^{2}}\\sin^{2}x+\\sin 2x\\,e^{x^{2}}+2\\cos 2x\\int_{0}^{x}e^{t^{2}}\\,dt$。$g'(0)=0$，$g''(0)=0$，$g'''(0)>0$，故 $(0,0)$ 是 $y=g(x)$ 的拐点。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-3",
+    "year": 2025,
+    "type": "choice",
+    "number": 3,
+    "subject": "考研数学二",
+    "stem": "如果对微分方程 $y''-2ay'+(a+2)y=0$ 任一解 $y(x)$，反常积分 $\\int_{0}^{+\\infty} y(x)\\,dx$ 均收敛，则 $a$ 的取值范围为",
+    "options": {
+      "A": "$(-2,-1]$.",
+      "B": "$(-\\infty,-1]$.",
+      "C": "$(-2,\\ 0)$.",
+      "D": "$(-\\infty,\\ 0)$."
+    },
+    "answer": "C",
+    "analysis": "当 $a=-2$ 时，$y''+4y'=0$，通解 $c_{1}+c_{2}e^{-4t}$，$c\\neq 0$ 时 $\\int_{0}^{+\\infty}(c_{1}+c_{2}e^{-4x})\\,dx$ 不收敛，故 B、D 排除。当 $a=-\\frac{1}{2}$ 时，$y''+y'+\\frac{3}{2}y=0$，通解 $y(t)=e^{-\\frac{1}{2}t}\\left(a_{1}\\cos\\frac{\\sqrt{5}}{2}t+B\\sin\\frac{\\sqrt{5}}{2}t\\right)$，$\\int_{0}^{+\\infty}y(x)\\,dx$ 收敛。由特征根实部须为负可得 $a$ 的范围为 $(-2,0)$。",
+    "knowledge": [
+      "常微分方程"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-4",
+    "year": 2025,
+    "type": "choice",
+    "number": 4,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x),g(x)$ 在 $x=0$ 某去心邻域内有定义且恒不为 $0$，若 $x\\to 0$ 时，$f(x)$ 是 $g(x)$ 的高阶无穷小，则当 $x\\to 0$ 时",
+    "options": {
+      "A": "$f(x)+g(x)=o\\big(g(x)\\big)$.",
+      "B": "$f(x)g(x)=o\\big(f^{2}(x)\\big)$.",
+      "C": "$f(x)=o\\big(e^{g(x)}-1\\big)$.",
+      "D": "$f(x)=o\\big(g^{2}(x)\\big)$."
+    },
+    "answer": "C",
+    "analysis": "由题易知，$x\\to 0$ 时 $f(x)$ 是 $g(x)$ 高阶无穷小，则有 $\\lim_{x\\to 0}\\frac{f(x)}{g(x)}=0$ 及 $\\lim_{x\\to 0}f(x)=0$，$\\lim_{x\\to 0}g(x)=0$。对 A，等式两端同除 $g(x)$ 取极限得 $0+1=0$，不成立。对 B，同除 $f^{2}(x)$ 取极限得 $\\infty=0$，不成立。对 C，同除 $g(x)$ 得 $\\frac{f(x)}{g(x)}=\\frac{o[e^{g(x)}-1]}{g(x)}$，取极限 $\\lim_{x\\to 0}\\frac{f(x)}{g(x)}=\\lim_{x\\to 0}\\frac{o[e^{g(x)}-1]}{g(x)}=\\lim_{x\\to 0}\\frac{o[g(x)]}{g(x)}$，即 $0=0$，故 C 正确。对 D，同除 $g^{2}(x)$ 取极限不成立。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-5",
+    "year": 2025,
+    "type": "choice",
+    "number": 5,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x,y)$ 连续，则 $\\int_{-2}^{2} dx\\int_{4-x^{2}}^{4} f(x,y)\\,dy=$",
+    "options": {
+      "A": "$\\int_{0}^{4}\\left[\\int_{-2}^{-\\sqrt{4-y}} f(x,y)\\,dx+\\int_{\\sqrt{4-y}}^{2} f(x,y)\\,dx\\right]dy.$",
+      "B": "$\\int_{0}^{4}\\left[\\int_{-2}^{\\sqrt{4-y}} f(x,y)\\,dx+\\int_{\\sqrt{4-y}}^{2} f(x,y)\\,dx\\right]dy.$",
+      "C": "$\\int_{0}^{4}\\left[\\int_{-2}^{-\\sqrt{4-y}} f(x,y)\\,dx+\\int_{2}^{\\sqrt{4-y}} f(x,y)\\,dx\\right]dy.$",
+      "D": "$2\\int_{0}^{4} dy\\int_{\\sqrt{4-y}}^{2} f(x,y)\\,dx.$"
+    },
+    "answer": "A",
+    "analysis": "由题易知，此二重积分积分区域为 $D=\\{(x,y)\\,|\\,4-x^{2}\\le y\\le 4,\\,-2\\le x\\le 2\\}$，对应图像如上图。记 $D_{1}=\\{(x,y)\\,|\\,4-x^{2}\\le y\\le 4,\\,-2\\le x\\le 0\\}$，$D_{2}=\\{(x,y)\\,|\\,4-x^{2}\\le y\\le 4,\\,0\\le x\\le 2\\}$。$I=\\int_{-2}^{2}dx\\int_{4-x^{2}}^{4}f(x,y)dy=\\iint_{D_{1}}f(x,y)d\\sigma+\\iint_{D_{2}}f(x,y)d\\sigma$，交换积分次序得 $I=\\int_{0}^{4}dy\\int_{-2}^{-\\sqrt{4-y}}f(x,y)dx+\\int_{0}^{4}dy\\int_{\\sqrt{4-y}}^{2}f(x,y)dx=\\int_{0}^{4}\\left[\\int_{-2}^{-\\sqrt{4-y}}f(x,y)dx+\\int_{\\sqrt{4-y}}^{2}f(x,y)dx\\right]dy$，故 A 正确。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "中等",
+    "image": "math_assets/2025_q5.jpg"
+  },
+  {
+    "id": "math2-2025-6",
+    "year": 2025,
+    "type": "choice",
+    "number": 6,
+    "subject": "考研数学二",
+    "stem": "设单位质点 $P,Q$ 分别位于点 $(0,0)$ 和 $(0,1)$ 处，$P$ 从点 $(0,0)$ 出发沿 $x$ 轴正向移动，记 $G$ 为引力常量，则当质点 $P$ 移动到点 $(l,0)$ 时，克服质点 $Q$ 的引力所做的功为（　　）",
+    "options": {
+      "A": "$\\int_{0}^{l}\\dfrac{G}{x^{2}+1}\\,dx$",
+      "B": "$\\int_{0}^{l}\\dfrac{Gx}{(x^{2}+1)^{\\frac{3}{2}}}\\,dx$",
+      "C": "$\\int_{0}^{l}\\dfrac{G}{(x^{2}+1)^{\\frac{3}{2}}}\\,dx$",
+      "D": "$\\int_{0}^{l}\\dfrac{G(x+1)}{(x^{2}+1)^{\\frac{3}{2}}}\\,dx$"
+    },
+    "answer": "A",
+    "analysis": "单位质点 $P$ 与单位质点 $Q$ 之间的引力为 $F=G\\frac{1\\cdot 1}{r^{2}}$，其中 $r$ 为两质点间的距离。由图可知 $r^{2}=x^{2}+1$。引力 $F$ 在 $x$ 方向上的力投影为 $F_{x}=F\\cos\\theta=\\frac{x}{\\sqrt{1+x^{2}}}F$。故克服引力做功为 $W=\\int_{0}^{l}F_{x}\\,dx=\\int_{0}^{l}\\frac{G}{(x^{2}+1)}\\frac{x}{\\sqrt{1+x^{2}}}\\,dx=\\int_{0}^{l}\\frac{Gx}{(1+x^{2})^{\\frac{3}{2}}}\\,dx$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-7",
+    "year": 2025,
+    "type": "choice",
+    "number": 7,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)$ 连续，给出下列 $4$ 个条件：① $\\lim_{x\\to 0}\\dfrac{|f(x)|-f(0)}{x}$ 存在；② $\\lim_{x\\to 0}\\dfrac{f(x)-|f(0)|}{x}$ 存在；③ $\\lim_{x\\to 0}\\dfrac{|f(x)|}{x}$ 存在；④ $\\lim_{x\\to 0}\\dfrac{|f(x)-f(0)|}{x}$ 存在。其中可得到\"$f(x)$ 在 $x=0$ 处可导\"的条件个数为",
+    "options": {
+      "A": "1.",
+      "B": "2.",
+      "C": "3.",
+      "D": "4."
+    },
+    "answer": "B",
+    "analysis": "① $\\lim_{x\\to 0}\\frac{|f(x)|-f(0)}{x}=A\\Rightarrow |f(0)|-f(0)=0\\Rightarrow f(0)=|f(0)|$，即 $f(0)=0$ 或 $f(0)$ 为正。若 $f(0)$ 为正则 $f'(0)=A$；若 $f(0)=0$，由 $\\lim_{x\\to 0}\\frac{|f(x)|}{x}=A$，若 $A=0$ 则 $f'(0)$ 存在，若 $A\\neq 0$ 则 $f'(0)$ 不存在，故①不一定。② 由 $\\lim_{x\\to 0}\\frac{f(x)-|f(0)|}{x}=A$ 得 $f(0)=|f(0)|$，即 $f(0)=0$ 或 $f(0)>0$，均可推出 $f'(0)=A$，②成立。③ 由 $\\lim_{x\\to 0}\\frac{|f(x)|}{x}$ 存在得 $|f(0)|=0\\Rightarrow f(0)=0$，同①，③错。④ $\\lim_{x\\to 0}\\frac{|f(x)|-|f(0)|}{x}$ 存在，则 $|f(x)|$ 在 $x=0$ 处可导 $\\Rightarrow f(x)$ 在 $x=0$ 处可导，④正确。从而①③错误，②④正确，选 B。",
+    "knowledge": [
+      "一元微分",
+      "函数与极限"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2025-8",
+    "year": 2025,
+    "type": "choice",
+    "number": 8,
+    "subject": "考研数学二",
+    "stem": "设矩阵 $\\begin{pmatrix}1&2&0\\\\2&a&0\\\\0&0&b\\end{pmatrix}$ 有一个正特征值和两个负特征值，则（　　）",
+    "options": {
+      "A": "$a>4,\\ b>0$",
+      "B": "$a<4,\\ b>0$",
+      "C": "$a>4,\\ b<0$",
+      "D": "$a<4,\\ b<0$"
+    },
+    "answer": "D",
+    "analysis": "令 $A=\\begin{pmatrix}1&2&0\\\\2&a&0\\\\0&0&b\\end{pmatrix}$，为实对称矩阵，对应二次型为 $f(x_{1},x_{2},x_{3})=x_{1}^{2}+ax_{2}^{2}+bx_{3}^{2}+4x_{1}x_{2}$。用配方法化为标准形：$f(x_{1},x_{2},x_{3})=(x_{1}+2x_{2})^{2}+(a-4)x_{2}^{2}+bx_{3}^{2}$。已知 $A$ 有一正两负特征值，则 $\\begin{cases}a-4<0\\\\ b<0\\end{cases}\\Rightarrow \\begin{cases}a<4\\\\ b<0\\end{cases}$，故选 D。",
+    "knowledge": [
+      "特征值与特征向量",
+      "二次型"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-9",
+    "year": 2025,
+    "type": "choice",
+    "number": 9,
+    "subject": "考研数学二",
+    "stem": "下列矩阵中，可以经过若干初等行变换得到矩阵 $\\begin{pmatrix}1&1&0&1\\\\0&0&1&2\\\\0&0&0&0\\end{pmatrix}$ 的是",
+    "options": {
+      "A": "$\\begin{pmatrix}1&1&0&1\\\\1&2&1&3\\\\2&3&1&4\\end{pmatrix}.$",
+      "B": "$\\begin{pmatrix}1&1&0&1\\\\1&1&2&5\\\\1&1&1&3\\end{pmatrix}.$",
+      "C": "$\\begin{pmatrix}1&0&0&1\\\\0&1&0&3\\\\0&1&0&0\\end{pmatrix}.$",
+      "D": "$\\begin{pmatrix}1&1&2&3\\\\1&2&2&3\\\\2&3&4&6\\end{pmatrix}.$"
+    },
+    "answer": "B",
+    "analysis": "A 选项：$\\begin{pmatrix}1&1&0&1\\\\1&2&1&3\\\\2&3&1&4\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&1&1&2\\\\0&1&1&2\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&1&1&2\\\\0&0&0&0\\end{pmatrix}$，首非零元位置不同。B 选项：$\\begin{pmatrix}1&1&0&1\\\\1&1&2&5\\\\1&1&1&3\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&0&2&4\\\\0&0&1&2\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&0&1&2\\\\0&0&0&0\\end{pmatrix}$，与目标一致。C 选项化为 $\\begin{pmatrix}1&0&0&0\\\\0&1&0&0\\\\0&0&0&1\\end{pmatrix}$。D 选项化为 $\\begin{pmatrix}1&1&2&3\\\\0&1&0&0\\\\0&1&0&0\\end{pmatrix}\\to\\begin{pmatrix}1&1&2&3\\\\0&1&0&0\\\\0&0&0&0\\end{pmatrix}$。故选 B。",
+    "knowledge": [
+      "矩阵"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-10",
+    "year": 2025,
+    "type": "choice",
+    "number": 10,
+    "subject": "考研数学二",
+    "stem": "设 $3$ 阶矩阵 $A,B$ 满足 $r(AB)=r(BA)+1$，则",
+    "options": {
+      "A": "方程组 $(A+B)\\boldsymbol{x}=\\boldsymbol{0}$ 只有零解.",
+      "B": "方程组 $A\\boldsymbol{x}=\\boldsymbol{0}$ 与方程组 $B\\boldsymbol{x}=\\boldsymbol{0}$ 均只有零解.",
+      "C": "方程组 $A\\boldsymbol{x}=\\boldsymbol{0}$ 与方程组 $B\\boldsymbol{x}=\\boldsymbol{0}$ 没有公共非零解.",
+      "D": "方程组 $ABAx=0$ 与方程组 $BABx=0$ 有公共非零解."
+    },
+    "answer": "D",
+    "analysis": "取 $A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}$，$B=\\begin{pmatrix}1&0&-1\\\\1&0&-1\\\\1&0&-1\\end{pmatrix}$，则 $AB=\\begin{pmatrix}3&0&-3\\\\3&0&-3\\\\3&0&3\\end{pmatrix}$，$r(AB)=1$；$BA=\\begin{pmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$，$r(BA)=0$，排除 B、C。$A+B=\\begin{pmatrix}2&1&0\\\\2&1&0\\\\2&1&0\\end{pmatrix}$，$r(A+B)=1$，排除 A，故选 D。",
+    "knowledge": [
+      "矩阵",
+      "线性方程组"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2025-11",
+    "year": 2025,
+    "type": "big",
+    "number": 11,
+    "subject": "考研数学二",
+    "stem": "设 $\\int_{1}^{+\\infty}\\dfrac{a}{x(2x+a)}\\,dx=\\ln 2$，则 $a=$ ______.",
+    "options": null,
+    "answer": "$a=2$",
+    "analysis": "原式 $=\\int_{1}^{+\\infty}\\frac{a}{x(2x+a)}\\,dx=\\left.\\ln x-\\ln(2x+a)\\right|_{1}^{+\\infty}=\\lim_{x\\to+\\infty}\\ln\\frac{x}{2x+a}-\\ln\\frac{1}{2+a}=\\lim_{x\\to+\\infty}\\ln\\frac{x}{x+a}+\\ln(2+a)$。故 $\\ln\\frac{1}{2}+\\ln(2+a)=\\ln 2$，即 $\\ln(2+a)=2\\ln 2\\Rightarrow a=2$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2025-12",
+    "year": 2025,
+    "type": "big",
+    "number": 12,
+    "subject": "考研数学二",
+    "stem": "曲线 $y=\\sqrt[3]{x^{3}-3x^{2}+1}$ 的渐近线方程为 ______.",
+    "options": null,
+    "answer": "$y=x-1$",
+    "analysis": "可得无水平渐近线、铅直渐近线，故求斜渐近线即可。$k=\\lim_{x\\to\\infty}\\frac{\\sqrt[3]{x^{3}-3x^{2}+1}}{x}=\\lim_{x\\to\\infty}\\sqrt[3]{\\frac{x^{2}-3x^{2}+1}{x^{3}}}=1$。$b=\\lim_{x\\to\\infty}\\sqrt[3]{x^{3}-3x^{2}+1}-x=\\lim_{x\\to\\infty}x\\cdot\\left(\\left(1+\\frac{1-3x^{2}}{x^{3}}\\right)^{\\frac{1}{3}}-1\\right)=\\lim_{x\\to\\infty}x\\cdot\\frac{1}{3}\\cdot\\frac{1-3x^{2}}{x^{3}}=-1$。故 $y=x-1$。",
+    "knowledge": [
+      "一元微分",
+      "函数与极限"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-13",
+    "year": 2025,
+    "type": "big",
+    "number": 13,
+    "subject": "考研数学二",
+    "stem": "$\\lim_{n\\to\\infty}\\dfrac{1}{n^{2}}\\left[\\ln\\dfrac{1}{n}+2\\ln\\dfrac{2}{n}+\\cdots+(n-1)\\ln\\dfrac{n-1}{n}\\right]=$ ______.",
+    "options": null,
+    "answer": "$-\\dfrac{1}{4}$",
+    "analysis": "原式 $=\\lim_{n\\to\\infty}\\left(\\frac{1}{n}\\ln\\frac{1}{n}+\\frac{2}{n}\\ln\\frac{2}{n}+\\cdots+\\frac{n-1}{n}\\ln\\frac{n-1}{n}+\\frac{n}{n}\\ln\\frac{n}{n}\\right)\\cdot\\frac{1}{n}=\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\frac{i}{n}\\ln\\frac{i}{n}\\cdot\\frac{1}{n}=\\int_{0}^{1}x\\ln x\\,dx=\\frac{1}{2}\\int_{0}^{1}\\ln x\\,dx^{2}=\\frac{1}{2}\\left[\\left.x^{2}\\ln x\\right|_{0}^{1}-\\int_{0}^{1}x^{2}\\cdot\\frac{1}{x}\\,dx\\right]=-\\frac{1}{2}\\int_{0}^{1}x\\,dx=-\\frac{1}{4}$。",
+    "knowledge": [
+      "一元积分",
+      "函数与极限"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-14",
+    "year": 2025,
+    "type": "big",
+    "number": 14,
+    "subject": "考研数学二",
+    "stem": "已知函数 $y=y(x)$ 由 $\\begin{cases}x=\\ln(1+2t),\\\\2t-\\int_{1}^{y+t^{2}} e^{-u^{2}}\\,du=0\\end{cases}$ 确定，则 $\\left.\\dfrac{dy}{dx}\\right|_{t=0}=$ ______.",
+    "options": null,
+    "answer": "$e$",
+    "analysis": "由第二式两边关于 $t$ 求导：$2-e^{-(y+t^{2})^{2}}\\cdot\\left(\\frac{dy}{dt}+2t\\right)=0$。当 $t=0$ 时，$y=1$，$2-e^{-1}\\cdot\\frac{dy}{dt}=0\\Rightarrow \\frac{dy}{dt}=2e$。又 $\\frac{dx}{dt}=\\frac{2}{1+2t}$，$\\left.\\frac{dx}{dt}\\right|_{t=0}=2$。则 $\\left.\\frac{dy}{dx}\\right|_{t=0}=\\frac{\\left.\\frac{dy}{dt}\\right|_{t=0}}{\\left.\\frac{dx}{dt}\\right|_{t=0}}=\\frac{2e}{2}=e$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-15",
+    "year": 2025,
+    "type": "big",
+    "number": 15,
+    "subject": "考研数学二",
+    "stem": "微分方程 $(2y-3x)dx+(2x-5y)dy=0$ 满足条件 $y(1)=1$ 的解为 ______.",
+    "options": null,
+    "answer": "$3x^{2}-4xy+5y^{2}=4$",
+    "analysis": "$(2y-3x)dx+(2x-5y)dy=0\\Rightarrow 2y\\,dx+2x\\,dy-3x\\,dx-5y\\,dy=0\\Rightarrow d(2xy)-d\\left(\\frac{3}{2}x^{2}\\right)-d\\left(\\frac{5}{2}y^{2}\\right)=0$，即 $d\\left(2xy-\\frac{3}{2}x^{2}-\\frac{5}{2}y^{2}\\right)=0\\Rightarrow 2xy-\\frac{3}{2}x^{2}-\\frac{5}{2}y^{2}=c$。又 $y(1)=1$，则 $2-\\frac{3}{2}-\\frac{5}{2}=c\\Rightarrow c=-2$。即 $2xy-\\frac{3}{2}x^{2}-\\frac{5}{2}y^{2}=-2$，亦即 $3x^{2}-4xy+5y^{2}=4$。",
+    "knowledge": [
+      "常微分方程"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-16",
+    "year": 2025,
+    "type": "big",
+    "number": 16,
+    "subject": "考研数学二",
+    "stem": "设矩阵 $A=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4})$，若 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 线性无关，且 $\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2}=\\boldsymbol{\\alpha}_{3}+\\boldsymbol{\\alpha}_{4}$，则方程组 $A\\boldsymbol{x}=\\boldsymbol{\\alpha}_{1}+4\\boldsymbol{\\alpha}_{4}$ 的通解为 $\\boldsymbol{x}=$ ______.",
+    "options": null,
+    "answer": "$k\\begin{pmatrix}1\\\\1\\\\-1\\\\-1\\end{pmatrix}+\\begin{pmatrix}1\\\\0\\\\0\\\\4\\end{pmatrix}$，$k$ 为任意常数",
+    "analysis": "由于 $\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2}=\\boldsymbol{\\alpha}_{3}+\\boldsymbol{\\alpha}_{4}$，故 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}$ 线性相关；又 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 线性无关，则 $r(A)=3$。$A\\boldsymbol{x}=\\boldsymbol{\\alpha}_{1}+4\\boldsymbol{\\alpha}_{4}$ 等价于 $(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4})\\begin{pmatrix}1\\\\0\\\\0\\\\4\\end{pmatrix}=\\boldsymbol{\\alpha}_{1}+4\\boldsymbol{\\alpha}_{4}$，故 $\\begin{pmatrix}1\\\\0\\\\0\\\\4\\end{pmatrix}$ 是一个特解。又 $\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2}-\\boldsymbol{\\alpha}_{3}-\\boldsymbol{\\alpha}_{4}=0$，即 $(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4})\\begin{pmatrix}1\\\\1\\\\-1\\\\-1\\end{pmatrix}=0$。由 $s=n-r(A)=4-3=1$ 得 $\\begin{pmatrix}1\\\\1\\\\-1\\\\-1\\end{pmatrix}$ 是 $A\\boldsymbol{x}=\\boldsymbol{0}$ 的一个基础解系。故通解为 $k\\begin{pmatrix}1\\\\1\\\\-1\\\\-1\\end{pmatrix}+\\begin{pmatrix}1\\\\0\\\\0\\\\4\\end{pmatrix}$，其中 $k$ 为任意常数。",
+    "knowledge": [
+      "向量组",
+      "线性方程组"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-17",
+    "year": 2025,
+    "type": "big",
+    "number": 17,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $10$ 分）计算 $\\displaystyle\\int_{0}^{1}\\dfrac{1}{(x+1)\\left(x^{2}-2x+2\\right)}\\,dx.$",
+    "options": null,
+    "answer": "$\\dfrac{3}{10}\\ln 2+\\dfrac{1}{10}\\pi$",
+    "analysis": "$\\int_{0}^{1}\\frac{1}{(x+1)(x^{2}-2x+2)}dx=\\int_{0}^{1}\\left(\\frac{A}{x+1}+\\frac{Bx+C}{x^{2}-2x+2}\\right)dx=\\int_{0}^{1}\\left(\\frac{\\frac{1}{5}}{x+1}+\\frac{-\\frac{1}{3}x+\\frac{3}{5}}{x^{2}-2x+2}\\right)dx=\\left.\\frac{1}{5}\\ln|1+x|\\right|_{0}^{1}-\\left.\\frac{1}{10}\\ln|x^{2}-2x+2|\\right|_{0}^{1}+\\left.\\frac{2}{5}\\arctan(x-1)\\right|_{0}^{1}=\\frac{3}{10}\\ln 2+\\frac{1}{10}\\pi$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-18",
+    "year": 2025,
+    "type": "big",
+    "number": 18,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $12$ 分）设函数 $f(x)$ 在 $x=0$ 处连续，且 $\\displaystyle\\lim_{x\\to 0}\\frac{xf(x)-e^{2\\sin x}+1}{\\ln(1+x)+\\ln(1-x)}=-3.$ 证明 $f(x)$ 在 $x=0$ 处可导，并求 $f'(0).$",
+    "options": null,
+    "answer": "$f'(0)=5$",
+    "analysis": "已知 $\\ln(1+x)+\\ln(1-x)=x-\\frac{1}{2}x^{2}+o(x^{2})-x-\\frac{1}{2}x^{2}+o(x^{2})=-x^{2}+o(x^{2})$。$e^{2\\sin x}=1+2\\sin x+\\frac{1}{2}(2\\sin x)^{2}+o(x^{2})=1+2\\sin x+2\\sin^{2}x+o(x^{2})$。因此 $-3=\\lim_{x\\to 0}\\frac{xf(x)-e^{2\\sin x}+1}{-x^{2}}=\\lim_{x\\to 0}\\frac{xf(x)-\\big(1+2\\sin x+2\\sin^{2}x+o(x^{2})\\big)+1}{-x^{2}}=\\lim_{x\\to 0}\\frac{xf(x)-2\\sin x}{-x^{2}}+\\lim_{x\\to 0}\\frac{-2\\sin^{2}x}{-x^{2}}$。可得出 $\\lim_{x\\to 0}\\frac{xf(x)-2\\sin x}{-x^{2}}=-5$，即 $\\lim_{x\\to 0}\\frac{xf(x)-2\\left(x-\\frac{1}{6}x^{3}+o(x^{3})\\right)}{x^{2}}=5$。进一步得 $\\lim_{x\\to 0}\\frac{xf(x)-2x}{x^{2}}=5$，以及 $\\lim_{x\\to 0}\\frac{f(x)-2}{x}=5$。$\\lim_{x\\to 0}[f(x)-2]=0$，得 $\\lim_{x\\to 0}f(x)=2=f(0)$，故 $f'(0)=\\lim_{x\\to 0}\\frac{f(x)-2}{x}=5$。",
+    "knowledge": [
+      "一元微分",
+      "函数与极限"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2025-19",
+    "year": 2025,
+    "type": "big",
+    "number": 19,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $12$ 分）设函数 $f(x,y)$ 可微，且满足 $df(x,y)=-2xe^{-y}dx+e^{-y}\\left(x^{2}-y-1\\right)dy$，$f(0,0)=2$，求 $f(x,y)$，并求 $f(x,y)$ 的极值.",
+    "options": null,
+    "answer": "$f(x,y)=-x^{2}e^{-y}+(y+2)e^{-y}$；极大值 $f(0,-1)=e$",
+    "analysis": "$\\frac{\\partial f}{\\partial x}=-2xe^{-y}\\Rightarrow f(x,y)=-x^{2}e^{-y}+\\varphi(y)$。则 $\\frac{\\partial f}{\\partial y}=x^{2}e^{-y}+\\varphi'(y)=e^{-y}x^{2}-(y+1)e^{-y}$，故 $\\varphi'(y)=-(y+1)e^{-y}\\Rightarrow \\varphi(y)=(y+2)e^{-y}+C$。$f(x,y)=-x^{2}e^{-y}+(y+2)e^{-y}+C$，又 $f(0,0)=2\\Rightarrow C=0$，故 $f(x,y)=-x^{2}e^{-y}+(y+2)e^{-y}$。令 $\\begin{cases}\\frac{\\partial f}{\\partial x}=-2xe^{-y}=0\\\\\\frac{\\partial f}{\\partial y}=e^{-y}(x^{2}-y-1)=0\\end{cases}\\Rightarrow \\begin{cases}x=0\\\\y=-1\\end{cases}$，驻点 $(0,-1)$。$f_{xx}=-2e^{-y}$，$f_{xy}=2xe^{-y}$，$f_{yy}=e^{-y}(x^{2}-y-1)-e^{-y}=e^{-y}(x^{2}-y)$。在点 $(0,-1)$ 处 $A=-2e$，$B=0$，$C=-e$。$AC-B^{2}>0$，$A<0$，从而 $f(x,y)$ 在 $(0,-1)$ 处有极大值，且极大值为 $f(0,-1)=e$。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2025-20",
+    "year": 2025,
+    "type": "big",
+    "number": 20,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $12$ 分）已知平面有界区域 $D=\\{(x,y)\\,|\\,x^{2}+y^{2}\\le 4x,\\ x^{2}+y^{2}\\le 4y\\}$，计算 $\\displaystyle\\iint_{D}(x-y)^{2}\\,dxdy.$",
+    "options": null,
+    "answer": "$12\\pi-\\dfrac{16}{3}$",
+    "analysis": "由题可知，积分区域 $D=\\{(x,y)\\,|\\,(x-2)^{2}+y^{2}\\le 2^{2},\\ x^{2}+(y-2)^{2}\\le 2^{2}\\}$，对应图形如右图，积分区域关于 $y=x$ 对称。记 $D_{1}=\\{(x,y)\\,|\\,x^{2}+(y-2)^{2}\\le 2^{2},\\ y\\le x\\}$，$D_{2}=\\{(x,y)\\,|\\,(x-2)^{2}+y^{2}\\le 2^{2},\\ y\\ge x\\}$。故 $I=\\iint_{D}(x-y)^{2}dxdy=\\iint_{D_{1}}(x-y)^{2}dxdy+\\iint_{D_{2}}(x-y)^{2}dxdy=2\\iint_{D_{1}}(x-y)^{2}dxdy$。令 $x=r\\cos\\theta$，$y=r\\sin\\theta$，在 $D_{1}$ 上有 $\\begin{cases}0\\le r\\le 4\\cos\\theta\\\\0\\le\\theta\\le\\frac{\\pi}{4}\\end{cases}$。则 $\\iint_{D_{1}}(x-y)^{2}dxdy=\\iint_{D_{1}}(x^{2}+y^{2}-2xy)dxdy=\\int_{0}^{\\frac{\\pi}{4}}d\\theta\\int_{0}^{4\\cos\\theta}(r^{2}-2r^{2}\\cos\\theta\\sin\\theta)dr=\\int_{0}^{\\frac{\\pi}{4}}d\\theta\\int_{0}^{4\\cos\\theta}(r^{3}-2r^{3}\\cos\\theta\\sin\\theta)dr=6\\pi-\\frac{8}{3}$。故 $I=2\\left(6\\pi-\\frac{8}{3}\\right)=12\\pi-\\frac{16}{3}$。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "较难",
+    "image": "math_assets/2025_q20.jpg"
+  },
+  {
+    "id": "math2-2025-21",
+    "year": 2025,
+    "type": "big",
+    "number": 21,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $12$ 分）设函数 $f(x)$ 在区间 $(a,b)$ 内可导。证明导函数 $f'(x)$ 在 $(a,b)$ 内严格单调增加的充分必要条件是：对 $(a,b)$ 内任意的 $x_{1},x_{2},x_{3}$，当 $x_{1}<x_{2}<x_{3}$ 时，$\\dfrac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}<\\dfrac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}.$",
+    "options": null,
+    "answer": "充要条件成立（证明见解析）",
+    "analysis": "充分性：若对 $(a,b)$ 内任意 $x_{1},x_{2},x_{3}$，当 $x_{1}<x_{2}<x_{3}$ 时都有 $\\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}<\\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}$。在 $(a,b)$ 内取任意 $x_{1}<x_{2}<x_{3}<x_{4}<x_{5}$，有 $\\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}<\\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}<\\frac{f(x_{4})-f(x_{3})}{x_{4}-x_{3}}<\\frac{f(x_{5})-f(x_{4})}{x_{5}-x_{4}}$。在 $\\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}<\\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}$ 两边同时令 $x_{2}\\to x_{1}^{+}$，得 $f'_{+}(x_{1})\\le\\frac{f(x_{3})-f(x_{1})}{x_{3}-x_{1}}$，两边同时令 $x_{2}\\to x_{3}^{-}$，得 $\\frac{f(x_{3})-f(x_{1})}{x_{3}-x_{1}}\\le f'_{-}(x_{3})$，即 $f'_{+}(x_{1})\\le\\frac{f(x_{3})-f(x_{1})}{x_{3}-x_{1}}\\le f'_{-}(x_{3})$，同理 $f'_{+}(x_{3})\\le\\frac{f(x_{5})-f(x_{3})}{x_{5}-x_{3}}\\le f'_{-}(x_{5})$。由 $\\frac{f(x_{3})-f(x_{1})}{x_{3}-x_{1}}<\\frac{f(x_{5})-f(x_{3})}{x_{5}-x_{3}}$ 得 $f'_{+}(x_{1})\\le f'_{-}(x_{5})$，由 $x_{1},x_{5}$ 的任意性得 $f'(x)$ 在 $(a,b)$ 内严格单调递增。必要性：已知 $f'(x)$ 单调递增，在 $[x_{1},x_{2}],[x_{2},x_{3}]$ 上分别用拉格朗日中值定理，存在 $\\xi_{1}\\in(x_{1},x_{2})$，$\\xi_{2}\\in(x_{2},x_{3})$，使 $f'(\\xi_{1})=\\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}$，$f'(\\xi_{2})=\\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}$。又 $f'(x)$ 单调递增且 $\\xi_{1}<\\xi_{2}$，知 $f'(\\xi_{1})<f'(\\xi_{2})$，即 $\\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}<\\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}$，必要性得证。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2025-22",
+    "year": 2025,
+    "type": "big",
+    "number": 22,
+    "subject": "考研数学二",
+    "stem": "（本题满分 $12$ 分）已知矩阵 $A=\\begin{bmatrix}4&1&-2\\\\1&1&1\\\\-2&1&a\\end{bmatrix}$ 与 $B=\\begin{bmatrix}k&0&0\\\\0&6&0\\\\0&0&0\\end{bmatrix}$ 合同。(1) 求 $a$ 的值及 $k$ 的取值范围；(2) 若存在正交矩阵 $Q$，使得 $Q^{T}AQ=B$，求 $k$ 及 $Q.$",
+    "options": null,
+    "answer": "(1) $a=4$，$k>0$；(2) $k=3$，$Q=\\begin{pmatrix}\\frac{1}{\\sqrt{3}}&-\\frac{1}{\\sqrt{2}}&\\frac{1}{\\sqrt{6}}\\\\\\frac{1}{\\sqrt{3}}&0&-\\frac{2}{\\sqrt{6}}\\\\\\frac{1}{\\sqrt{3}}&\\frac{1}{\\sqrt{2}}&\\frac{1}{\\sqrt{6}}\\end{pmatrix}$",
+    "analysis": "(1) $A$ 与 $B$ 合同，二者有相同的正负惯性指数。显然 $B$ 的特征值为 $k,6,0$，故 $A$ 有特征值 $0$，$|A|=0$。计算得 $|A|=-3(a-4)$，即 $a=4$。此时 $|\\lambda E-A|=\\lambda(\\lambda-3)(\\lambda-6)$，$A$ 的特征值为 $3,6,0$，正惯性指数 $p=2$，故 $k>0$。(2) 由 $Q^{T}AQ=B$ 且 $Q$ 为正交矩阵知 $Q^{-1}AQ=B$，故 $A,B$ 相似，特征值相同，$k=3$。对 $A$：$\\lambda=3$ 时解 $(3E-A)X=0$，得 $c_{1}=\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}$；$\\lambda=6$ 时解 $(6E-A)x=0$，得 $c_{2}=\\begin{pmatrix}-1\\\\0\\\\1\\end{pmatrix}$；$\\lambda=0$ 时解 $(0\\cdot E-A)x=0$，得 $c_{3}=\\begin{pmatrix}1\\\\-2\\\\1\\end{pmatrix}$。再单位化得 $Q=\\begin{pmatrix}\\frac{1}{\\sqrt{3}}&-\\frac{1}{\\sqrt{2}}&\\frac{1}{\\sqrt{6}}\\\\\\frac{1}{\\sqrt{3}}&0&-\\frac{2}{\\sqrt{6}}\\\\\\frac{1}{\\sqrt{3}}&\\frac{1}{\\sqrt{2}}&\\frac{1}{\\sqrt{6}}\\end{pmatrix}$。",
+    "knowledge": [
+      "二次型",
+      "特征值与特征向量",
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  }
+]

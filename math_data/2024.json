@@ -1,0 +1,410 @@
+[
+  {
+    "id": "math2-2024-1",
+    "year": 2024,
+    "type": "choice",
+    "number": 1,
+    "subject": "考研数学二",
+    "stem": "函数 $f(x)=|x|^{\\frac{1}{(1-x)(x-2)}}$ 的第一类间断点的个数是（  ）",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "1",
+      "D": "0"
+    },
+    "answer": "C",
+    "analysis": "无定义的点为 $1,2,0$，$\\lim\\limits_{x\\to 1}|x|^{\\frac{1}{(1-x)(x-2)}}=e$，$\\lim\\limits_{x\\to 2}|x|^{\\frac{1}{(1-x)(x-2)}}=+\\infty$，$\\lim\\limits_{x\\to 0^{+}}|x|^{\\frac{1}{(1-x)(x-2)}}=+\\infty$，所以第一类间断点的个数是 1 个，故选 C。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-2",
+    "year": 2024,
+    "type": "choice",
+    "number": 2,
+    "subject": "考研数学二",
+    "stem": "设函数 $y=f(x)$ 由参数方程 $\\begin{cases}x=1+t^{3}\\\\y=e^{t^{2}}\\end{cases}$ 确定，则 $\\lim\\limits_{x\\to+\\infty}x\\left[f\\left(2+\\dfrac{2}{x}\\right)-f(2)\\right]=$（  ）",
+    "options": {
+      "A": "$2e$",
+      "B": "$\\dfrac{4e}{3}$",
+      "C": "$\\dfrac{2e}{3}$",
+      "D": "$\\dfrac{e}{3}$"
+    },
+    "answer": "B",
+    "analysis": "容易看出函数 $f(x)$ 可导，且 $f'(x)=\\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}=\\dfrac{e^{t^{2}}\\cdot 2t}{3t^{2}}$，当 $x=2,t=1$ 时，$f'(2)=\\left.\\dfrac{e^{t^{2}}\\cdot 2t}{3t^{2}}\\right|_{t=1}=\\dfrac{2}{3}e$，所以 $\\lim\\limits_{x\\to+\\infty}x\\left(f\\left(2+\\dfrac{2}{x}\\right)-f(2)\\right)=2\\lim\\limits_{x\\to+\\infty}\\dfrac{\\left(f\\left(2+\\frac{2}{x}\\right)-f(2)\\right)}{\\frac{2}{x}}=2f'(2)=\\dfrac{4}{3}e$，故选 B。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-3",
+    "year": 2024,
+    "type": "choice",
+    "number": 3,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)=\\int_{0}^{\\sin x}\\sin t^{3}dt$，$g(x)=\\int_{0}^{x}f(t)dt$，则（  ）",
+    "options": {
+      "A": "$f(x)$ 是奇函数，$g(x)$ 是奇函数",
+      "B": "$f(x)$ 是奇函数，$g(x)$ 是偶函数",
+      "C": "$f(x)$ 是偶函数，$g(x)$ 是偶函数",
+      "D": "$f(x)$ 是偶函数，$g(x)$ 是奇函数"
+    },
+    "answer": "D",
+    "analysis": "令 $h(x)=\\int_{0}^{x}\\sin t^{3}dt$，此时 $h(x)$ 是一个偶函数，所以，$f(x)=h(\\sin x)$ 为偶函数，从而 $g(x)$ 为奇函数，故选 D。",
+    "knowledge": [
+      "一元积分",
+      "函数与极限"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2024-4",
+    "year": 2024,
+    "type": "choice",
+    "number": 4,
+    "subject": "考研数学二",
+    "stem": "已知数列 $\\{a_n\\}(a_n\\ne 0)$，若 $\\{a_n\\}$ 发散，则（  ）",
+    "options": {
+      "A": "$\\left\\{a_n+\\dfrac{1}{a_n}\\right\\}$ 发散",
+      "B": "$\\left\\{a_n-\\dfrac{1}{a_n}\\right\\}$ 发散",
+      "C": "$\\left\\{e^{a_n}+\\dfrac{1}{e^{a_n}}\\right\\}$ 发散",
+      "D": "$\\left\\{e^{a_n}-\\dfrac{1}{e^{a_n}}\\right\\}$ 发散"
+    },
+    "answer": "D",
+    "analysis": "对于 A 选项，令 $a_n=2,\\dfrac{1}{2},2,\\cdots$，$u_n=a_n+\\dfrac{1}{a_n}=\\dfrac{5}{2}$，所以 $\\left\\{a_n+\\dfrac{1}{a_n}\\right\\}$ 收敛；\n对于 B 选项，令 $a_n=(-1)^{n-1}$，此时 $u_n=a_n-\\dfrac{1}{a_n}=0$，所以 $\\left\\{a_n-\\dfrac{1}{a_n}\\right\\}$ 收敛；\n对于 C 选项，令 $a_n=(-1)^{n}$，$u_n=e^{a_n}+e^{-a_n}=e+e^{-1}$ 收敛，故选 D。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-5",
+    "year": 2024,
+    "type": "choice",
+    "number": 5,
+    "subject": "考研数学二",
+    "stem": "已知函数 $f(x,y)=\\begin{cases}(x^{2}+y^{2})\\sin\\dfrac{1}{xy},xy\\ne 0\\\\0,xy=0\\end{cases}$，则在点 $(0,0)$ 处（  ）",
+    "options": {
+      "A": "$\\dfrac{\\partial f(x,y)}{\\partial x}$ 连续，$f(x,y)$ 可微",
+      "B": "$\\dfrac{\\partial f(x,y)}{\\partial x}$ 连续，$f(x,y)$ 不可微",
+      "C": "$\\dfrac{\\partial f(x,y)}{\\partial x}$ 不连续，$f(x,y)$ 可微",
+      "D": "$\\dfrac{\\partial f(x,y)}{\\partial x}$ 不连续，$f(x,y)$ 不可微"
+    },
+    "answer": "C",
+    "analysis": "$(0,0)$ 点处，$f'_{x}(0,0)=\\lim\\limits_{x\\to 0}\\dfrac{f(x,0)-f(0,0)}{x}=\\lim\\limits_{x\\to 0}\\dfrac{0-0}{x}=0$，同理 $f'_{y}(0,0)=\\lim\\limits_{y\\to 0}\\dfrac{f(0,y)-f(0,0)}{y}=0$，$x\\ne 0$ 时，$f'_{x}(x,y)=2x\\sin\\dfrac{1}{xy}-\\dfrac{x^{2}+y^{2}}{x^{2}y}\\cos\\dfrac{1}{xy}$；因 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{f(x,y)-f(0,0)-f'_{x}(0,0)x-f'_{y}(0,0)y}{\\sqrt{x^{2}+y^{2}}}=\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{(x^{2}+y^{2})\\sin\\frac{1}{xy}}{\\sqrt{x^{2}+y^{2}}}=\\lim\\limits_{(x,y)\\to(0,0)}\\sqrt{x^{2}+y^{2}}\\sin\\dfrac{1}{xy}=0$。\n\n故 $f(x,y)$ 在 $(0,0)$ 点处可微；当 $(x,y)\\to(0,0)$ 时，$f'_{x}(x,y)$ 极限不存在，故 $f'_{x}(x,y)$ 在 $(0,0)$ 点处不连续，故选 C。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-6",
+    "year": 2024,
+    "type": "choice",
+    "number": 6,
+    "subject": "考研数学二",
+    "stem": "设 $f(x,y)$ 是连续函数，则 $\\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}}dx\\int_{\\sin x}^{1}f(x,y)dy=$（  ）",
+    "options": {
+      "A": "$\\int_{\\frac{1}{2}}^{1}dy\\int_{\\frac{\\pi}{6}}^{\\arcsin y}f(x,y)dx$",
+      "B": "$\\int_{\\frac{1}{2}}^{1}dy\\int_{\\arcsin y}^{\\frac{\\pi}{2}}f(x,y)dx$",
+      "C": "$\\int_{0}^{\\frac{1}{2}}dy\\int_{\\frac{\\pi}{6}}^{\\arcsin y}f(x,y)dx$",
+      "D": "$\\int_{0}^{\\frac{1}{2}}dy\\int_{\\arcsin y}^{\\frac{\\pi}{2}}f(x,y)dx$"
+    },
+    "answer": "A",
+    "analysis": "积分区域为 D：$\\dfrac{\\pi}{6}\\le x\\le\\dfrac{\\pi}{2}$，$\\sin x\\le y\\le 1$，故交换积分次序得 $\\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}}dx\\int_{\\sin x}^{1}f(x,y)dy=\\int_{\\frac{1}{2}}^{1}dy\\int_{\\frac{\\pi}{6}}^{\\arcsin y}f(x,y)dx$，故选 A。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-7",
+    "year": 2024,
+    "type": "choice",
+    "number": 7,
+    "subject": "考研数学二",
+    "stem": "设非负函数 $f(x)$ 在 $[0,+\\infty)$ 上连续，给出以下三个命题：\n①若 $\\int_{0}^{+\\infty}f^{2}(x)$ 收敛，则 $\\int_{0}^{+\\infty}f(x)$ 收敛。\n②若存在 $p>1$，使得 $\\lim\\limits_{x\\to+\\infty}x^{p}f(x)$ 存在，则 $\\int_{0}^{+\\infty}f(x)$ 收敛。\n③若 $\\int_{0}^{+\\infty}f(x)$ 收敛，则存在 $p>1$，使得 $\\lim\\limits_{x\\to+\\infty}x^{p}f(x)$ 存在。\n其中真命题个数为（  ）",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3"
+    },
+    "answer": "B",
+    "analysis": "若 $f(x)=\\dfrac{1}{x+1}$，$\\int_{0}^{+\\infty}f^{2}(x)dx=\\int_{0}^{+\\infty}\\left(\\dfrac{1}{1+x}\\right)^{2}dx$ 收敛，但 $\\int_{0}^{+\\infty}\\dfrac{1}{1+x}dx=\\ln(1+x)\\big|_{0}^{+\\infty}=+\\infty$，故①错误。\n当 $p>1$ 时，$\\int_{0}^{+\\infty}\\dfrac{1}{x^{p}}dx$ 收敛，由于 $\\lim\\limits_{x\\to+\\infty}x^{p}f(x)$ 存在，故根据比较判别法，可知 $\\int_{0}^{+\\infty}f(x)dx$ 收敛，故②正确。\n令 $f(x)=\\dfrac{1}{(x+1)\\ln^{2}(x+1)}$，当 $p>1$ 时，则 $\\lim\\limits_{x\\to+\\infty}x^{p}f(x)=+\\infty$ 不存在，故③错误。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-8",
+    "year": 2024,
+    "type": "choice",
+    "number": 8,
+    "subject": "考研数学二",
+    "stem": "设 A 为 3 阶矩阵，$P=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\1&0&1\\end{pmatrix}$，若 $P^{T}AP^{2}=\\begin{pmatrix}a+2c&0&c\\\\0&b&0\\\\2c&0&c\\end{pmatrix}$，则 A=（  ）",
+    "options": {
+      "A": "$\\begin{pmatrix}c&0&0\\\\0&a&0\\\\0&0&b\\end{pmatrix}$",
+      "B": "$\\begin{pmatrix}b&0&0\\\\0&c&0\\\\0&0&a\\end{pmatrix}$",
+      "C": "$\\begin{pmatrix}a&0&0\\\\0&b&0\\\\0&0&c\\end{pmatrix}$",
+      "D": "$\\begin{pmatrix}c&0&0\\\\0&b&0\\\\0&0&a\\end{pmatrix}$"
+    },
+    "answer": "C",
+    "analysis": "由 $P^{T}AP^{2}=\\begin{pmatrix}a+2c&0&c\\\\0&b&0\\\\2c&0&c\\end{pmatrix}$，则 $A=(P^{T})^{-1}\\begin{pmatrix}a+2c&0&c\\\\0&b&0\\\\2c&0&c\\end{pmatrix}(P^{2})^{-1}$\n$=\\begin{pmatrix}1&0&-1\\\\0&1&0\\\\0&0&1\\end{pmatrix}\\begin{pmatrix}a+2c&0&c\\\\0&b&0\\\\2c&0&c\\end{pmatrix}\\begin{pmatrix}1&0&0\\\\0&1&0\\\\-1&0&1\\end{pmatrix}^{2}=\\begin{pmatrix}a&0&0\\\\0&b&0\\\\0&0&c\\end{pmatrix}$，故选（C）。",
+    "knowledge": [
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-9",
+    "year": 2024,
+    "type": "choice",
+    "number": 9,
+    "subject": "考研数学二",
+    "stem": "设 $A$ 为 4 阶矩阵，$A^{*}$ 为 $A$ 的伴随矩阵，若 $A(A-A^{*})=0$，且 $A\\ne A^{*}$，则 $r(A)$ 取值为（  ）",
+    "options": {
+      "A": "0 或 1",
+      "B": "1 或 3",
+      "C": "2 或 3",
+      "D": "1 或 2"
+    },
+    "answer": "D",
+    "analysis": "由题设知 $r(A)+r(A-A^{*})\\le 4$、$A^{2}=AA^{*}=|A|E$，又因为 $r(A-A^{*})\\ge 1$，则 $1\\le r(A)\\le 3$，则 $A^{2}=O$，故 $r(A)+r(A)\\le 4$，即 $r(A)\\le 2$，综上 $1\\le r(A)\\le 2$，故选(D)。",
+    "knowledge": [
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-10",
+    "year": 2024,
+    "type": "choice",
+    "number": 10,
+    "subject": "考研数学二",
+    "stem": "设 $A$，$B$ 为 2 阶矩阵，且 $AB=BA$，则 \"$A$ 有两个不相等的特征值\" 是 \"$B$ 可对角化\" 的（  ）",
+    "options": {
+      "A": "充分必要条件",
+      "B": "充分不必要条件",
+      "C": "必要不充分条件",
+      "D": "既不充分也不必要条件"
+    },
+    "answer": "B",
+    "analysis": "设 $A\\alpha=\\lambda\\alpha$，同左乘 $B$ 得 $BA\\alpha=\\lambda B\\alpha$，即 $AB\\alpha=\\lambda B\\alpha$，①若 $B\\alpha\\ne 0$，则 $B\\alpha$ 为 $A$ 对应于 $\\lambda$ 的特征向量，则 $B\\alpha=k\\alpha(k\\ne 0)$，则 $\\alpha$ 为 $B$ 对应于 $\\lambda=k$ 的特征向量。②若 $B\\alpha=0$，则 $B\\alpha=0\\cdot\\alpha$，则 $\\alpha$ 为 $B$ 对应于 $\\lambda=0$ 的特征向量，综上：$\\alpha$ 必为 $B$ 的特征向量，即 $A$ 的特征向量都是 $B$ 的特征向量，同理 $B$ 的特征向量都是 $A$ 的特征向量。所以 \"$A$ 有两个不相等的特征值\"，故 $A$ 有两个线性无关特征向量，所以 $B$ 有两个线性无关特征向量，故 \"$B$ 可对角化\"，反之不对，例如 $A=\\begin{pmatrix}1&\\\\&1\\end{pmatrix}$，$B=\\begin{pmatrix}1&\\\\&2\\end{pmatrix}$，$AB=BA$，\"$B$ 可对角化\"，但是 $A$ 的特征值是重根。故选（B）。",
+    "knowledge": [
+      "特征值与特征向量",
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-11",
+    "year": 2024,
+    "type": "big",
+    "number": 11,
+    "subject": "考研数学二",
+    "stem": "曲线 $y^{2}=x$ 在 $(0,0)$ 处的曲率方程为______",
+    "options": null,
+    "answer": "$\\left(x-\\dfrac{1}{2}\\right)^{2}+y^{2}=\\dfrac{1}{4}$ 或 $x^{2}-x+y^{2}=0$",
+    "analysis": "曲线的参数方程为 $\\begin{cases}x=y^{2}\\\\y=y\\end{cases}$，由曲率公式 $K=\\dfrac{|x'(t)y''(t)-x''(t)y'(t)|}{[x'^{2}(t)+y'^{2}(t)]^{\\frac{3}{2}}}$ 得：在 $(0,0)$ 处的曲率 $K=2$，则 $(0,0)$ 处的曲率半径 $R=\\dfrac{1}{2}$，又曲线在 $(0,0)$ 处的切线为 $y$ 轴，则曲率中心为 $\\left(\\dfrac{1}{2},0\\right)$，故曲率圆的方程为 $\\left(x-\\dfrac{1}{2}\\right)^{2}+y^{2}=\\dfrac{1}{4}$，即 $x^{2}-x+y^{2}=0$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-12",
+    "year": 2024,
+    "type": "big",
+    "number": 12,
+    "subject": "考研数学二",
+    "stem": "函数 $f(x,y)=2x^{3}-9x^{2}-6y^{4}+12x+24y$ 的极值点是______",
+    "options": null,
+    "answer": "$(1,1)$",
+    "analysis": "由 $\\begin{cases}f'_{x}(x,y)=6x^{2}-18x+12=0\\\\f'_{y}(x,y)=-24y^{3}+24=0\\end{cases}$ 得驻点 $(1,1)$ 和 $(2,1)$\n$f''_{xx}(x,y)=12x-18$，$f''_{yy}(x,y)=-72y^{2}$，$f''_{xy}(x,y)=0$\n对于驻点 $(1,1)$：$A=-6,B=0,C=-72$，由 $AC-B^{2}>0$ 且 $A<0$ 可知，驻点 $(1,1)$ 是 $f(x,y)$ 的极小值点；\n对于驻点 $(2,1)$：$A=6,B=0,C=-72$，由 $AC-B^{2}<0$ 可知，驻点 $(2,1)$ 不是 $f(x,y)$ 的极值点。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-13",
+    "year": 2024,
+    "type": "big",
+    "number": 13,
+    "subject": "考研数学二",
+    "stem": "微分方程 $y'=\\dfrac{1}{(x+y)^{2}}$ 满足条件 $y(1)=0$ 的解为______",
+    "options": null,
+    "answer": "$y-\\arctan(x+y)=-\\dfrac{\\pi}{4}$",
+    "analysis": "令 $x+y=u$，等式两边同时对 $x$ 求导，得到 $u'=1+y'$，代入原式可得 $u'-1=\\dfrac{1}{u^{2}}$，整理得 $\\dfrac{du}{dx}=\\dfrac{1+u^{2}}{u^{2}}$，即 $\\int\\dfrac{u^{2}}{u^{2}+1}du=\\int dx$，求得 $u-\\arctan u=x+c$，即 $y-\\arctan(x+y)=c$，把初始条件代入可得 $c=-\\dfrac{\\pi}{4}$，故解为：$y-\\arctan(x+y)=-\\dfrac{\\pi}{4}$。",
+    "knowledge": [
+      "常微分方程"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-14",
+    "year": 2024,
+    "type": "big",
+    "number": 14,
+    "subject": "考研数学二",
+    "stem": "已知函数 $f(x)=(e^{x}+1)x^{2}$，则 $f^{(5)}(1)=$______",
+    "options": null,
+    "answer": "$31e$",
+    "analysis": "由莱布尼茨公式可得 $f^{(5)}(x)=C_{5}^{0}(e^{x}+1)^{(5)}x^{2}+C_{5}^{1}(e^{x}+1)^{(4)}2x+C_{5}^{2}(e^{x}+1)^{(3)}2$，即 $f^{(5)}(1)=31e$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-15",
+    "year": 2024,
+    "type": "big",
+    "number": 15,
+    "subject": "考研数学二",
+    "stem": "某物体以速度 $v(t)=t+k\\sin\\pi t$ 做直线运动，若它是从 $t=0$ 到 $t=3$ 的时间段内平均速度为 $\\dfrac{5}{2}$，则 $k=$______",
+    "options": null,
+    "answer": "$\\dfrac{3\\pi}{2}$",
+    "analysis": "由函数的平均值公式可得 $\\dfrac{\\int_{0}^{3}(t+k\\sin\\pi t)dt}{3}=\\dfrac{5}{2}$；解得 $k=\\dfrac{3\\pi}{2}$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2024-16",
+    "year": 2024,
+    "type": "big",
+    "number": 16,
+    "subject": "考研数学二",
+    "stem": "设向量 $\\alpha_1=\\begin{pmatrix}a\\\\1\\\\-1\\\\1\\end{pmatrix}$，$\\alpha_2=\\begin{pmatrix}1\\\\1\\\\b\\\\a\\end{pmatrix}$，$\\alpha_3=\\begin{pmatrix}1\\\\a\\\\-1\\\\1\\end{pmatrix}$，若 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性相关，且其中任意两个向量均线性无关，则 $ab=$______",
+    "options": null,
+    "answer": "$-4$",
+    "analysis": "$(\\alpha_1\\ \\alpha_2\\ \\alpha_3)=\\begin{pmatrix}a&1&1\\\\1&1&a\\\\-1&b&-1\\\\1&a&1\\end{pmatrix}\\to\\begin{pmatrix}1&1&a\\\\0&1-a&1-a^{2}\\\\0&b+1&a-1\\\\0&a-1&1-a\\end{pmatrix}\\to\\begin{pmatrix}1&1&a\\\\0&a-1&1-a\\\\0&b+1&a-1\\\\0&0&(1-a)(2+a)\\end{pmatrix}$\n由于任意两向量线性无关，则 $a\\ne 1$\n则 $(\\alpha_1\\ \\alpha_2\\ \\alpha_3)\\to\\begin{pmatrix}1&1&a\\\\0&1&-1\\\\0&b+1&a-1\\\\0&0&a+2\\end{pmatrix}\\to\\begin{pmatrix}1&1&a\\\\0&1&-1\\\\0&0&a+2\\\\0&0&a+b\\end{pmatrix}$\n由于 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性相关，则 $r(\\alpha_1,\\alpha_2,\\alpha_3)<3$，则 $a=-2,b=2$，故 $ab=-4$。",
+    "knowledge": [
+      "向量组"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-17",
+    "year": 2024,
+    "type": "big",
+    "number": 17,
+    "subject": "考研数学二",
+    "stem": "（本题满分 10 分）设平面有界区域 D 位于第一象限，由曲线 $xy=\\dfrac{1}{3}$，$xy=3$ 与直线 $y=\\dfrac{1}{3}x$，$y=3x$ 围成，计算 $\\iint_D(1+x-y)dxdy$",
+    "options": null,
+    "answer": "$\\dfrac{8}{3}\\ln 3$",
+    "analysis": "积分区域的图像关于 $y=x$ 对称，由轮换对称性可得 $\\iint_D(1+x-y)dxdy=\\iint_D(1+y-x)dxdy$，故 $\\iint_D(1+x-y)dxdy=\\dfrac{1}{2}\\left(\\iint_D(1+x-y)dxdy+\\iint_D(1+y-x)dxdy\\right)=\\iint_D 1dxdy$\n$\\iint_D 1dxdy=\\int_{\\frac{1}{3}}^{1}\\left(3x-\\dfrac{1}{3x}\\right)dx+\\int_{1}^{3}\\left(\\dfrac{3}{x}-\\dfrac{x}{3}\\right)dx=\\dfrac{4}{3}-\\dfrac{1}{3}\\ln 3+3\\ln 3-\\dfrac{4}{3}=\\dfrac{8}{3}\\ln 3$。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2024-18",
+    "year": 2024,
+    "type": "big",
+    "number": 18,
+    "subject": "考研数学二",
+    "stem": "（本题满分 12 分）将 $y(x)$ 为微分方程 $x^{2}y''+xy'-9y=0$ 满足条件 $y\\big|_{x=1}=2$，$y'\\big|_{x=1}=6$ 的解。\n1）利用变换 $x=e^{t}$ 将上述方程化为常系数方程，并求 $y(x)$；\n2）计算 $\\int_{1}^{2}y(x)\\sqrt{4-x^{2}}dx$",
+    "options": null,
+    "answer": "1) $y(x)=2x^{3}$；2) $\\dfrac{22}{5}\\sqrt{3}$",
+    "analysis": "（1）对于 $x=e^{t}$，有 $t=\\ln x$，得 $\\dfrac{dy}{dx}=\\dfrac{dy}{dt}\\cdot\\dfrac{dt}{dx}=\\dfrac{dy}{dt}\\cdot\\dfrac{1}{x}$，$\\dfrac{d^{2}y}{dx^{2}}=\\left(\\dfrac{d^{2}y}{dt^{2}}\\cdot\\dfrac{1}{x}\\right)+\\dfrac{dy}{dt}\\cdot\\left(-\\dfrac{1}{x^{2}}\\right)=\\dfrac{1}{x^{2}}\\left(\\dfrac{d^{2}y}{dt^{2}}-\\dfrac{dy}{dt}\\right)$，从而原方程化为 $x^{2}\\cdot\\dfrac{1}{x^{2}}\\cdot\\left(\\dfrac{d^{2}y}{dt^{2}}-\\dfrac{dy}{dt}\\right)+x\\cdot\\dfrac{dy}{dt}\\cdot\\dfrac{1}{x}-9y=0$，即 $\\dfrac{d^{2}y}{dt^{2}}-9y=0$，得通解 $y=C_1e^{3t}+C_2e^{-3t}=C_1x^{3}+C_2x^{-3}$，代入 $y\\big|_{x=1}=2$，$y'\\big|_{x=1}=6$，解得 $C_1=2$，$C_2=0$，故 $y(x)=2x^{3}$。\n\n$\\int_{1}^{2}y(x)\\sqrt{4-x^{2}}dx=\\int_{1}^{2}2x^{3}\\sqrt{4-x^{2}}dx=\\int_{1}^{2}x^{2}\\sqrt{4-x^{2}}dx^{2}\\xlongequal{t=4-x^{2}}\\int_{0}^{3}(4-t)\\sqrt{t}dt=4\\cdot\\dfrac{2}{3}t^{\\frac{3}{2}}\\bigg|_{0}^{3}-\\dfrac{2}{5}t^{\\frac{5}{2}}\\bigg|_{0}^{3}=\\dfrac{22}{5}\\sqrt{3}$。",
+    "knowledge": [
+      "常微分方程",
+      "一元积分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-19",
+    "year": 2024,
+    "type": "big",
+    "number": 19,
+    "subject": "考研数学二",
+    "stem": "（本题满分 12 分）设 $t>0$，平面有界区域 D 由曲线 $y=\\sqrt{x}e^{-x}$ 与直线 $x=t$，$x=2t$ 及 $x$ 轴围成的区域绕 $x$ 轴旋转一周所成旋转体的体积为 $V(t)$，求 $V(t)$ 的最大值。",
+    "options": null,
+    "answer": "$V(\\ln 2)=\\dfrac{\\pi}{16}\\left(\\ln 2+\\dfrac{3}{4}\\right)$",
+    "analysis": "$V(t)=\\int_{t}^{2t}\\pi xe^{-2x}dx=-\\dfrac{\\pi}{2}\\left[\\left(2t+\\dfrac{1}{2}\\right)e^{-4t}-\\left(t+\\dfrac{1}{2}\\right)e^{-2t}\\right]$\n则 $V'(t)=-\\pi te^{-2t}(1-4e^{-2t})$，令 $V'(t)=0\\Rightarrow t=\\ln 2$\n$\\because t\\in(\\ln 2-\\delta,\\ln 2)$，有 $V'(t)>0$，$t\\in(\\ln 2,\\ln 2+\\delta)$ 有 $V'(t)<0$，$\\therefore t=\\ln 2$ 为 $V(t)$ 的极大值点即最大值点，故最大值为 $V(\\ln 2)=\\dfrac{\\pi}{16}\\left(\\ln 2+\\dfrac{3}{4}\\right)$。",
+    "knowledge": [
+      "一元微分",
+      "一元积分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-20",
+    "year": 2024,
+    "type": "big",
+    "number": 20,
+    "subject": "考研数学二",
+    "stem": "（本题满分 12 分）已知函数 $f(u,v)$ 具有 2 阶连续偏导数，且函数 $g(x,y)=f(2x+y,3x-y)$ 满足 $\\dfrac{\\partial^{2}g}{\\partial x^{2}}+\\dfrac{\\partial^{2}g}{\\partial x\\partial y}-6\\dfrac{\\partial^{2}g}{\\partial y^{2}}=1$，\n1）求 $\\dfrac{\\partial^{2}f}{\\partial u\\partial v}$；\n2）若 $\\dfrac{\\partial f(u,0)}{\\partial u}=ue^{-u}$，$f(0,v)=\\dfrac{1}{50}v^{2}-1$，求 $f(u,v)$ 的表达式。",
+    "options": null,
+    "answer": "1) $\\dfrac{\\partial^{2}f}{\\partial u\\partial v}=\\dfrac{1}{25}$；2) $f(u,v)=\\dfrac{1}{25}uv-e^{-u}(u+1)+\\dfrac{1}{50}v^{2}$",
+    "analysis": "$\\dfrac{\\partial g}{\\partial x}=f'_{1}\\cdot 2+f'_{2}\\cdot 3$，$\\dfrac{\\partial g}{\\partial y}=f'_{1}-f'_{2}$\n$\\dfrac{\\partial^{2}g}{\\partial x^{2}}=4f''_{11}+12f''_{12}+9f''_{22}$，$\\dfrac{\\partial^{2}g}{\\partial x\\partial y}=2f''_{11}+f''_{12}-3f''_{22}$\n$\\dfrac{\\partial^{2}g}{\\partial y^{2}}=f''_{11}-2f''_{12}+f''_{22}$，代入原方程：$25f''_{12}=1\\Rightarrow\\dfrac{\\partial^{2}f}{\\partial u\\partial v}=\\dfrac{1}{25}$\n$\\because\\dfrac{\\partial^{2}f}{\\partial u\\partial v}=\\dfrac{1}{25}\\Rightarrow f'_{u}=\\dfrac{1}{25}v+c(u)$\n又 $\\because f'_{u}(u,0)=ue^{-u}\\Rightarrow c(u)=ue^{-u}\\Rightarrow f'_{u}(u,v)=\\dfrac{1}{25}v+ue^{-u}$，两边对 $u$ 积分可得 $f(u,v)=\\dfrac{1}{25}uv-e^{-u}(u+1)+c(v)$\n$\\because f(0,v)=\\dfrac{1}{50}v^{2}-1\\Rightarrow c(v)=\\dfrac{1}{50}v^{2}$\n$\\therefore f(u,v)=\\dfrac{1}{25}uv-e^{-u}(u+1)+\\dfrac{1}{50}v^{2}$。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-21",
+    "year": 2024,
+    "type": "big",
+    "number": 21,
+    "subject": "考研数学二",
+    "stem": "（本题满分 12 分）设函数 $f(x)$ 具有 2 阶导数，且 $f'(0)=f'(1)$，$|f''(x)|\\le 1$，证明：\n1）当 $x\\in(0,1)$ 时，$\\left|f(x)-f(0)(1-x)-f(1)x\\right|\\le\\dfrac{x(1-x)}{2}$；\n2）$\\left|\\int_{0}^{1}f(x)dx-\\dfrac{f(0)+f(1)}{2}\\right|\\le\\dfrac{1}{12}$。",
+    "options": null,
+    "answer": "证明题，见解析",
+    "analysis": "（1）证明：令 $g(x)=f(0)(1-x)+f(1)x$\n令 $F(x)=f(x)-g(x)-\\dfrac{x(1-x)}{2}$，$x\\in(0,1)$，$F(0)=0$，$F(1)=0$\n$\\because F''(x)=f''(x)+1\\ge 0$（$|f''(x)|\\le 1$），$\\therefore F(x)$ 为凹函数，$\\therefore F(x)\\le 0$\n$\\therefore f(x)-f(0)(1-x)-f(1)x\\le\\dfrac{x(1-x)}{2}$\n令 $F(x)=f(x)-g(x)+\\dfrac{x(1-x)}{2}$，$x\\in(0,1)$，$F(0)=0$，$F(1)=0$\n$\\because F''(x)=f''(x)-1\\le 0$（$|f''(x)|\\le 1$），$\\therefore F(x)$ 为凸函数，$\\therefore F(x)\\ge 0$\n$\\therefore f(x)-f(0)(1-x)-f(1)x\\ge-\\dfrac{x(1-x)}{2}$\n综上：$\\left|f(x)-f(0)(1-x)-f(1)x\\right|\\le\\dfrac{x(1-x)}{2}$。\n\n（2）由（1）中 $f(x)-f(0)(1-x)-f(1)x\\le\\dfrac{x(1-x)}{2}$\n$\\Rightarrow\\int_{0}^{1}[f(x)-f(0)(1-x)-f(1)x]dx\\le\\int_{0}^{1}\\dfrac{x(1-x)}{2}dx$\n$\\Rightarrow\\int_{0}^{1}f(x)dx-\\dfrac{f(0)+f(1)}{2}\\le\\dfrac{1}{12}$\n由第（1）中 $f(x)-f(0)(1-x)-f(1)x\\ge-\\dfrac{x(1-x)}{2}$\n$\\Rightarrow\\int_{0}^{1}[f(x)-f(0)(1-x)-f(1)x]dx\\ge\\int_{0}^{1}-\\dfrac{x(1-x)}{2}dx$\n$\\Rightarrow\\int_{0}^{1}f(x)dx-\\dfrac{f(0)+f(1)}{2}\\ge-\\dfrac{1}{12}$\n综上：$\\left|\\int_{0}^{1}f(x)dx-\\dfrac{f(0)+f(1)}{2}\\right|\\le\\dfrac{1}{12}$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2024-22",
+    "year": 2024,
+    "type": "big",
+    "number": 22,
+    "subject": "考研数学二",
+    "stem": "（本题满分 12 分）设矩阵 $A=\\begin{pmatrix}0&1&a\\\\1&0&1\\end{pmatrix}$，$B=\\begin{pmatrix}1&1\\\\1&1\\\\b&2\\end{pmatrix}$，二次型 $f(x_1,x_2,x_3)=x^{T}BAx$，已知方程组 $Ax=0$ 的均解是 $B^{T}x=0$ 的解，但这两个方程组不同解。\n1）求 $a,b$ 的值；\n2）求正交变换 $x=Qy$ 将 $f(x_1,x_2,x_3)$ 化为标准形。",
+    "options": null,
+    "answer": "1) $a=1,b=2$；2) 标准形 $f=6y_3^{2}$",
+    "analysis": "(1)由题知 $Ax=0$ 与 $\\begin{pmatrix}A\\\\B^{T}\\end{pmatrix}x=0$ 同解，故 $r\\begin{pmatrix}A\\\\B^{T}\\end{pmatrix}=r(A)=2$，又由 $\\begin{pmatrix}A\\\\B^{T}\\end{pmatrix}=\\begin{pmatrix}0&1&a\\\\1&0&1\\\\1&1&b\\\\1&1&2\\end{pmatrix}\\to\\begin{pmatrix}1&0&0\\\\0&1&a\\\\0&0&b-a-1\\\\0&0&1-a\\end{pmatrix}$，故 $a=1,b=2$。\n\n(2)由（1）知 $BA=\\begin{pmatrix}1&1\\\\1&1\\\\2&2\\end{pmatrix}\\begin{pmatrix}0&1&1\\\\1&0&1\\end{pmatrix}=\\begin{pmatrix}1&1&2\\\\1&1&2\\\\2&2&4\\end{pmatrix}$，故二次型矩阵为 $C=BA=\\begin{pmatrix}1&1&2\\\\1&1&2\\\\2&2&4\\end{pmatrix}$，由 $|\\lambda E-C|=\\begin{vmatrix}\\lambda-1&-1&-2\\\\-1&\\lambda-1&-2\\\\-2&-2&\\lambda-4\\end{vmatrix}=0$，得 $\\lambda_1=\\lambda_2=0$，$\\lambda_3=6$。\n\n当 $\\lambda_1=\\lambda_2=0$ 时，$Cx=0$，得基础解系为 $\\eta_1=\\begin{pmatrix}-1\\\\1\\\\0\\end{pmatrix}$，$\\eta_2=\\begin{pmatrix}-1\\\\-1\\\\1\\end{pmatrix}$\n当 $\\lambda_3=6$ 时，$(6E-C)x=0$，得基础解系为 $\\eta_3=\\begin{pmatrix}1\\\\1\\\\2\\end{pmatrix}$\n可知 $\\eta_1,\\eta_2,\\eta_3$ 为正交向量组，将其单位化如下\n$\\gamma_1=\\dfrac{\\eta_1}{\\|\\eta_1\\|}=\\dfrac{1}{\\sqrt{2}}\\begin{pmatrix}-1\\\\1\\\\0\\end{pmatrix}$，$\\gamma_2=\\dfrac{\\eta_2}{\\|\\eta_2\\|}=\\dfrac{1}{\\sqrt{3}}\\begin{pmatrix}-1\\\\-1\\\\1\\end{pmatrix}$，$\\gamma_3=\\dfrac{\\eta_3}{\\|\\eta_3\\|}=\\dfrac{1}{\\sqrt{6}}\\begin{pmatrix}1\\\\1\\\\2\\end{pmatrix}$\n故正交矩阵为 $Q=\\begin{pmatrix}-\\dfrac{1}{\\sqrt{2}}&-\\dfrac{1}{\\sqrt{3}}&\\dfrac{1}{\\sqrt{6}}\\\\\\dfrac{1}{\\sqrt{2}}&-\\dfrac{1}{\\sqrt{3}}&\\dfrac{1}{\\sqrt{6}}\\\\0&\\dfrac{1}{\\sqrt{3}}&\\dfrac{2}{\\sqrt{6}}\\end{pmatrix}$\n此时二次型经正交变换 $x=Qy$ 可化为标准形为 $f=6y_3^{2}$。",
+    "knowledge": [
+      "二次型",
+      "特征值与特征向量",
+      "线性方程组"
+    ],
+    "difficulty": "较难",
+    "image": null
+  }
+]

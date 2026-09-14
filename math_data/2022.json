@@ -1,0 +1,405 @@
+[
+  {
+    "id": "math2-2022-1",
+    "year": 2022,
+    "type": "choice",
+    "number": 1,
+    "subject": "考研数学二",
+    "stem": "当 $x\\to 0$ 时，$\\alpha(x)$、$\\beta(x)$ 是非零无穷小量，给出以下四个命题：\n① 若 $\\alpha(x)\\sim\\beta(x)$，则 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$；\n② 若 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$，则 $\\alpha(x)\\sim\\beta(x)$；\n③ 若 $\\alpha(x)\\sim\\beta(x)$，则 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$；\n④ 若 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，则 $\\alpha(x)\\sim\\beta(x)$。\n其中正确的序号是（　）",
+    "options": {
+      "A": "①②",
+      "B": "①④",
+      "C": "①③④",
+      "D": "②③④"
+    },
+    "answer": "C",
+    "analysis": "当 $x\\to 0$ 时，若 $\\alpha(x)\\sim\\beta(x)$，则 $\\lim_{x\\to 0}\\dfrac{\\alpha(x)}{\\beta(x)}=1$，故 $\\lim_{x\\to 0}\\dfrac{\\alpha^{2}(x)}{\\beta^{2}(x)}=\\lim_{x\\to 0}\\!\\left(\\dfrac{\\alpha(x)}{\\beta(x)}\\right)^{2}=1$，即 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$，①正确；且 $\\lim_{x\\to 0}\\dfrac{\\alpha(x)-\\beta(x)}{\\alpha(x)}=1-1=0$，故 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，③正确。若 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$，则 $\\lim\\dfrac{\\alpha^{2}(x)}{\\beta^{2}(x)}=1$，此时 $\\lim\\dfrac{\\alpha(x)}{\\beta(x)}=\\pm 1$，当 $\\lim\\dfrac{\\alpha(x)}{\\beta(x)}=-1$ 时 $\\alpha(x)$ 与 $\\beta(x)$ 不是等价无穷小，②不正确。若 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，则 $\\lim\\dfrac{\\alpha(x)}{\\beta(x)}=\\lim\\dfrac{\\alpha(x)}{\\alpha(x)-o(\\alpha(x))}=1$，故 $\\alpha(x)\\sim\\beta(x)$，④正确。综上选 C。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-2",
+    "year": 2022,
+    "type": "choice",
+    "number": 2,
+    "subject": "考研数学二",
+    "stem": "$\\displaystyle\\int_{0}^{2}dy\\int_{y}^{2}\\dfrac{y}{\\sqrt{1+x^{3}}}\\,dx=$（　）",
+    "options": {
+      "A": "$\\dfrac{\\sqrt{2}}{6}$",
+      "B": "$\\dfrac{1}{3}$",
+      "C": "$\\dfrac{\\sqrt{2}}{3}$",
+      "D": "$\\dfrac{2}{3}$"
+    },
+    "answer": "D",
+    "analysis": "交换积分次序：$\\displaystyle\\int_{0}^{2}dy\\int_{y}^{2}\\dfrac{y}{\\sqrt{1+x^{3}}}dx=\\int_{0}^{2}dx\\int_{0}^{x}\\dfrac{y}{\\sqrt{1+x^{3}}}dy=\\dfrac{1}{2}\\int_{0}^{2}\\dfrac{x^{2}}{\\sqrt{1+x^{3}}}dx=\\dfrac{1}{3}\\sqrt{1+x^{3}}\\Big|_{0}^{2}=\\dfrac{1}{3}(3-1)=\\dfrac{2}{3}$。选 D。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-3",
+    "year": 2022,
+    "type": "choice",
+    "number": 3,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)$ 在 $x=x_{0}$ 处有 $2$ 阶导数，则（　）",
+    "options": {
+      "A": "当 $f(x)$ 在 $x_{0}$ 的某邻域内单调增加时，$f'(x_{0})>0$",
+      "B": "当 $f'(x_{0})>0$ 时，$f(x)$ 在 $x_{0}$ 的某邻域内单调增加",
+      "C": "当 $f(x)$ 在 $x_{0}$ 的某邻域内是凹函数时，$f''(x_{0})>0$",
+      "D": "当 $f''(x_{0})>0$ 时，$f(x)$ 在 $x_{0}$ 的某邻域内是凹函数"
+    },
+    "answer": "B",
+    "analysis": "因为 $f(x)$ 在 $x_{0}$ 处有 $2$ 阶导数，$f''(x_{0})=\\lim_{x\\to x_{0}}\\dfrac{f'(x)-f'(x_{0})}{x-x_{0}}$ 存在，从而 $\\lim_{x\\to x_{0}}f'(x)=f'(x_{0})$。当 $f'(x_{0})>0$ 时，由极限的局部保号性，存在 $\\delta>0$，当 $x\\in U(x_{0},\\delta)$ 时 $f'(x)>0$，即 $f(x)$ 在该邻域内单调增加。A 反例 $f(x)=x^{3}$ 在 $x=0$；C 凹函数允许 $f''(x_{0})=0$；D 仅一点二阶导数为正不能推出邻域凹。选 B。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-4",
+    "year": 2022,
+    "type": "choice",
+    "number": 4,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(t)$ 连续，令 $F(x,y)=\\displaystyle\\int_{0}^{x-y}(x-y-t)f(t)dt$，则（　）",
+    "options": {
+      "A": "$\\dfrac{\\partial F}{\\partial x}=\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+      "B": "$\\dfrac{\\partial F}{\\partial x}=\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=-\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+      "C": "$\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+      "D": "$\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=-\\dfrac{\\partial^{2}F}{\\partial y^{2}}$"
+    },
+    "answer": "C",
+    "analysis": "$F(x,y)=(x-y)\\displaystyle\\int_{0}^{x-y}f(t)dt-\\int_{0}^{x-y}tf(t)dt$。$\\dfrac{\\partial F}{\\partial x}=\\displaystyle\\int_{0}^{x-y}f(t)dt+(x-y)f(x-y)-(x-y)f(x-y)=\\int_{0}^{x-y}f(t)dt$，$\\dfrac{\\partial^{2}F}{\\partial x^{2}}=f(x-y)$。同理 $\\dfrac{\\partial F}{\\partial y}=-\\displaystyle\\int_{0}^{x-y}f(t)dt$，$\\dfrac{\\partial^{2}F}{\\partial y^{2}}=f(x-y)$。故 $\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$，选 C。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-5",
+    "year": 2022,
+    "type": "choice",
+    "number": 5,
+    "subject": "考研数学二",
+    "stem": "设 $p$ 为常数，若反常积分 $\\displaystyle\\int_{0}^{1}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}dx$ 收敛，则 $p$ 的取值范围是（　）",
+    "options": {
+      "A": "$(-1,1)$",
+      "B": "$(-1,2)$",
+      "C": "$(-\\infty,1)$",
+      "D": "$(-\\infty,2)$"
+    },
+    "answer": "A",
+    "analysis": "当 $p=1$ 时，$\\displaystyle\\int_{0}^{1}\\dfrac{\\ln x}{x}dx$ 发散，排除 B、D；当 $p=-1$ 时，$\\displaystyle\\int_{0}^{1}\\dfrac{x\\ln x}{(1-x)^{2}}dx=\\int_{0}^{1}\\dfrac{(1-t)\\ln(1-t)}{t^{2}}dt$，又 $\\lim_{t\\to 0^{+}}\\dfrac{(t-1)\\ln(1-t)}{t^{2}}=1$，由无界函数反常积分审敛法知积分发散，排除 C。故选 A。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-6",
+    "year": 2022,
+    "type": "choice",
+    "number": 6,
+    "subject": "考研数学二",
+    "stem": "设有数列 $\\{x_{n}\\},\\ -\\dfrac{\\pi}{2}\\le x_{n}\\le\\dfrac{\\pi}{2}$，则（　）",
+    "options": {
+      "A": "若 $\\lim_{n\\to\\infty}\\cos(\\sin x_{n})$ 存在，则 $\\lim_{n\\to\\infty}x_{n}$ 存在",
+      "B": "若 $\\lim_{n\\to\\infty}\\sin(\\cos x_{n})$ 存在，则 $\\lim_{n\\to\\infty}x_{n}$ 存在",
+      "C": "若 $\\lim_{n\\to\\infty}\\cos(\\sin x_{n})$ 存在，则 $\\lim_{n\\to\\infty}\\sin x_{n}$ 存在，但 $\\lim_{n\\to\\infty}x_{n}$ 不一定存在",
+      "D": "若 $\\lim_{n\\to\\infty}\\sin(\\cos x_{n})$ 存在，则 $\\lim_{n\\to\\infty}\\cos x_{n}$ 存在，但 $\\lim_{n\\to\\infty}x_{n}$ 不一定存在"
+    },
+    "answer": "D",
+    "analysis": "在区间 $\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$ 上，取 $x_{n}=(-1)^{n}$ 可排除 A、B、C。对于 D，若 $\\lim_{n\\to\\infty}\\sin(\\cos x_{n})=A$，由于 $\\sin x$ 在 $[0,\\dfrac{\\pi}{2}]$ 单调，所以 $\\lim_{n\\to\\infty}\\cos x_{n}=\\arcsin A$，但取 $x_{n}=(-1)^{n}$ 时 $\\lim_{n\\to\\infty}x_{n}$ 不一定存在。故选 D。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-7",
+    "year": 2022,
+    "type": "choice",
+    "number": 7,
+    "subject": "考研数学二",
+    "stem": "已知 $I_{1}=\\displaystyle\\int_{0}^{1}\\dfrac{x}{2(1+\\cos x)}dx,\\ I_{2}=\\int_{0}^{1}\\dfrac{\\ln(1+x)}{1+\\cos x}dx,\\ I_{3}=\\int_{0}^{1}\\dfrac{2x}{1+\\sin x}dx$，则（　）",
+    "options": {
+      "A": "$I_{1}<I_{2}<I_{3}$",
+      "B": "$I_{2}<I_{1}<I_{3}$",
+      "C": "$I_{1}<I_{3}<I_{2}$",
+      "D": "$I_{3}<I_{2}<I_{1}$"
+    },
+    "answer": "A",
+    "analysis": "先比较 $I_{1},I_{2}$：令 $f(x)=\\dfrac{x}{2}-\\ln(1+x),\\ x\\in(0,1)$，$f(0)=0$，$f'(x)=\\dfrac{1}{2}-\\dfrac{1}{1+x}=\\dfrac{x-1}{2(1+x)}<0$，故 $f(x)<0$，即 $\\dfrac{x}{2}<\\ln(1+x)$，$I_{1}<I_{2}$。再比较 $I_{2},I_{3}$：因 $\\ln(1+x)<x$，$\\dfrac{1+\\sin x}{2}<1+\\cos x$，故 $\\dfrac{\\ln(1+x)}{1+\\cos x}<\\dfrac{x}{(1+\\sin x)/2}=\\dfrac{2x}{1+\\sin x}$，即 $I_{2}<I_{3}$。综上 $I_{1}<I_{2}<I_{3}$，选 A。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-8",
+    "year": 2022,
+    "type": "choice",
+    "number": 8,
+    "subject": "考研数学二",
+    "stem": "设 $A$ 为 $3$ 阶矩阵，$\\Lambda=\\begin{pmatrix}1&0&0\\\\0&-1&0\\\\0&0&0\\end{pmatrix}$，则 $A$ 的特征值为 $-1,1,0$ 的充分必要条件是（　）",
+    "options": {
+      "A": "存在可逆矩阵 $P,Q$，使得 $A=P\\Lambda Q$",
+      "B": "存在可逆矩阵 $P$，使得 $A=P\\Lambda P^{-1}$",
+      "C": "存在正交矩阵 $Q$，使得 $A=Q\\Lambda Q^{-1}$",
+      "D": "存在可逆矩阵 $P$，使得 $A=P\\Lambda P^{T}$"
+    },
+    "answer": "B",
+    "analysis": "$3$ 阶矩阵 $A$ 有 $-1,1,0$ 三个不同的特征值，故 $A$ 可相似对角化，即存在可逆矩阵 $P$ 使 $A=P\\Lambda P^{-1}$；反之，若 $A=P\\Lambda P^{-1}$，则 $A$ 与 $\\Lambda$ 相似，相似矩阵具有相同的特征值，而 $\\Lambda$ 的特征值为 $1,-1,0$。故选 B。",
+    "knowledge": [
+      "特征值与特征向量"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2022-9",
+    "year": 2022,
+    "type": "choice",
+    "number": 9,
+    "subject": "考研数学二",
+    "stem": "设矩阵 $A=\\begin{pmatrix}1&1&1\\\\1&a&a^{2}\\\\1&b&b^{2}\\end{pmatrix},\\ b=\\begin{pmatrix}1\\\\2\\\\4\\end{pmatrix}$，则线性方程组 $Ax=b$ 解的情况为（　）",
+    "options": {
+      "A": "无解",
+      "B": "有解",
+      "C": "有无穷多解或无解",
+      "D": "有唯一解或无解"
+    },
+    "answer": "D",
+    "analysis": "对增广矩阵作初等行变换：$(A|b)\\to\\begin{pmatrix}1&1&1&1\\\\0&a-1&a^{2}-1&1\\\\0&b-1&b^{2}-1&3\\end{pmatrix}$。当 $a=1$ 或 $b=1$ 时 $r(A)\\neq r(A|b)$，方程无解；当 $a\\neq 1$ 且 $b\\neq 1$ 时，$(A|b)\\to\\begin{pmatrix}1&1&1&1\\\\0&1&a+1&\\dfrac{1}{a-1}\\\\0&0&b-a&\\dfrac{3}{b-1}-\\dfrac{1}{a-1}\\end{pmatrix}$。当 $a\\neq b$ 时 $r(A)=r(A|b)=3$，方程有唯一解；当 $a=b$ 时 $r(A)=2,\\ r(A|b)=3$，方程无解。综上方程有唯一解或无解，选 D。",
+    "knowledge": [
+      "线性方程组"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-10",
+    "year": 2022,
+    "type": "choice",
+    "number": 10,
+    "subject": "考研数学二",
+    "stem": "设 $\\alpha_{1}=\\begin{pmatrix}\\lambda\\\\1\\\\1\\end{pmatrix},\\ \\alpha_{2}=\\begin{pmatrix}1\\\\\\lambda\\\\1\\end{pmatrix},\\ \\alpha_{3}=\\begin{pmatrix}1\\\\1\\\\\\lambda\\end{pmatrix},\\ \\alpha_{4}=\\begin{pmatrix}1\\\\\\lambda\\\\\\lambda^{2}\\end{pmatrix}$，若向量组 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 与 $\\alpha_{1},\\alpha_{2},\\alpha_{4}$ 等价，则 $\\lambda$ 的取值范围是（　）",
+    "options": {
+      "A": "$\\{0,1\\}$",
+      "B": "$\\{\\lambda\\mid\\lambda\\in\\mathbb{R},\\lambda\\neq -2\\}$",
+      "C": "$\\{\\lambda\\mid\\lambda\\in\\mathbb{R},\\lambda\\neq -1,\\lambda\\neq -2\\}$",
+      "D": "$\\{\\lambda\\mid\\lambda\\in\\mathbb{R},\\lambda\\neq -1\\}$"
+    },
+    "answer": "C",
+    "analysis": "两向量组等价的充要条件是 $r(\\alpha_{1},\\alpha_{2},\\alpha_{3})=r(\\alpha_{1},\\alpha_{2},\\alpha_{4})=r(\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4})$。对矩阵 $(\\alpha_{2},\\alpha_{1},\\alpha_{3},\\alpha_{4})$ 作初等行变换。当 $\\lambda=1$ 时秩均为 $1$，等价；当 $\\lambda=-2$ 时 $r(\\alpha_{1},\\alpha_{2},\\alpha_{3})=2$，$r(\\alpha_{1},\\alpha_{2},\\alpha_{4})=3$，不等价；当 $\\lambda=-1$ 时 $r(\\alpha_{1},\\alpha_{2},\\alpha_{3})=3$，$r(\\alpha_{1},\\alpha_{2},\\alpha_{4})=2$，不等价；当 $\\lambda\\neq -2$ 且 $\\lambda\\neq -1$ 时三者秩均为 $3$，等价。故选 C。",
+    "knowledge": [
+      "向量组"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-11",
+    "year": 2022,
+    "type": "big",
+    "number": 11,
+    "subject": "考研数学二",
+    "stem": "若 $\\displaystyle\\lim_{x\\to 0}\\!\\left(\\dfrac{1+e^{x}}{2}\\right)^{\\cot x}=$ ______。",
+    "options": null,
+    "answer": "$e^{\\frac{1}{2}}$",
+    "analysis": "$\\displaystyle\\lim_{x\\to 0}\\!\\left(\\dfrac{1+e^{x}}{2}\\right)^{\\cot x}=\\exp\\!\\left(\\lim_{x\\to 0}\\cot x\\ln\\dfrac{1+e^{x}}{2}\\right)=\\exp\\!\\left(\\lim_{x\\to 0}\\dfrac{e^{x}-1}{2\\tan x}\\right)=e^{\\frac{1}{2}}$。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2022-12",
+    "year": 2022,
+    "type": "big",
+    "number": 12,
+    "subject": "考研数学二",
+    "stem": "已知函数 $y=y(x)$ 由方程 $x^{2}+xy+y^{3}=3$ 确定，则 $y''(1)=$ ______。",
+    "options": null,
+    "answer": "$-\\dfrac{31}{32}$",
+    "analysis": "由已知得 $y(1)=1$。方程两端对 $x$ 求导：$2x+y+xy'+3y^{2}y'=0$，代入 $y(1)=1$ 得 $y'(1)=-\\dfrac{3}{4}$。上式两端再对 $x$ 求导：$2+2y'+xy''+6y(y')^{2}+3y^{2}y''=0$，代入 $y(1)=1,\\ y'(1)=-\\dfrac{3}{4}$ 得 $y''(1)=-\\dfrac{31}{32}$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-13",
+    "year": 2022,
+    "type": "big",
+    "number": 13,
+    "subject": "考研数学二",
+    "stem": "$\\displaystyle\\int_{0}^{1}\\dfrac{2x+3}{x^{2}-x+1}dx=$ ______。",
+    "options": null,
+    "answer": "$\\dfrac{8\\sqrt{3}}{9}\\pi$",
+    "analysis": "$\\displaystyle\\int_{0}^{1}\\dfrac{2x+3}{x^{2}-x+1}dx=\\int_{0}^{1}\\dfrac{2x-1}{x^{2}-x+1}dx+4\\int_{0}^{1}\\dfrac{1}{(x-\\frac{1}{2})^{2}+\\frac{3}{4}}dx=\\ln(x^{2}-x+1)\\Big|_{0}^{1}+\\dfrac{8}{\\sqrt{3}}\\arctan\\dfrac{2x-1}{\\sqrt{3}}\\Big|_{0}^{1}=\\dfrac{8\\sqrt{3}}{9}\\pi$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-14",
+    "year": 2022,
+    "type": "big",
+    "number": 14,
+    "subject": "考研数学二",
+    "stem": "微分方程 $y'''-2y''+5y'=0$ 的通解 $y(x)=$ ______。",
+    "options": null,
+    "answer": "$y=C_{1}+e^{x}(C_{2}\\cos 2x+C_{3}\\sin 2x)$",
+    "analysis": "对应特征方程为 $r^{3}-2r^{2}+5r=0$，即 $r(r^{2}-2r+5)=0$，解得 $r_{1}=0,\\ r_{2,3}=1\\pm 2i$。故通解为 $y=C_{1}+e^{x}(C_{2}\\cos 2x+C_{3}\\sin 2x)$，其中 $C_{1},C_{2},C_{3}$ 为任意常数。",
+    "knowledge": [
+      "常微分方程"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2022-15",
+    "year": 2022,
+    "type": "big",
+    "number": 15,
+    "subject": "考研数学二",
+    "stem": "已知曲线 $L$ 的极坐标方程为 $r=\\sin 3\\theta,\\ \\left(0\\le\\theta\\le\\dfrac{\\pi}{3}\\right)$，则 $L$ 所围成的有界区域的面积为 ______。",
+    "options": null,
+    "answer": "$\\dfrac{\\pi}{12}$",
+    "analysis": "面积 $A=\\dfrac{1}{2}\\displaystyle\\int_{0}^{\\frac{\\pi}{3}}(\\sin 3\\theta)^{2}d\\theta=\\dfrac{1}{6}\\int_{0}^{\\pi}\\sin^{2}t\\,dt=\\dfrac{1}{6}\\int_{0}^{\\pi}\\dfrac{1-\\cos 2t}{2}dt=\\dfrac{\\pi}{12}$。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-16",
+    "year": 2022,
+    "type": "big",
+    "number": 16,
+    "subject": "考研数学二",
+    "stem": "设 $A$ 为 $3$ 阶矩阵，交换 $A$ 的第 $2$ 行和第 $3$ 行，再将第 $2$ 列的 $-1$ 倍加到第一列，得到矩阵 $B=\\begin{pmatrix}-2&1&-1\\\\1&-1&0\\\\-1&0&0\\end{pmatrix}$，则 $A^{-1}$ 的迹 $\\mathrm{tr}(A^{-1})=$ ______。",
+    "options": null,
+    "answer": "$-1$",
+    "analysis": "令 $P_{1}=\\begin{pmatrix}1&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix},\\ P_{2}=\\begin{pmatrix}1&0&0\\\\-1&1&0\\\\0&0&1\\end{pmatrix}$，则 $P_{1}AP_{2}=B$，$A=P_{1}^{-1}BP_{2}^{-1}=\\begin{pmatrix}-1&1&-1\\\\-1&0&0\\\\0&-1&0\\end{pmatrix}$。$|A-\\lambda E|=\\begin{vmatrix}-1-\\lambda&1&-1\\\\-1&-\\lambda&0\\\\0&-1&-\\lambda\\end{vmatrix}=-(\\lambda+1)(\\lambda^{2}+1)=0$，解得 $\\lambda_{1}=-1,\\ \\lambda_{2}=i,\\ \\lambda_{3}=-i$。$A^{-1}$ 的特征值为 $-1,\\ -i,\\ i$，故 $\\mathrm{tr}(A^{-1})=-1$。",
+    "knowledge": [
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-17",
+    "year": 2022,
+    "type": "big",
+    "number": 17,
+    "subject": "考研数学二",
+    "stem": "已知函数 $f(x)$ 在 $x=1$ 处可导，满足 $\\displaystyle\\lim_{x\\to 0}\\dfrac{f(e^{x^{2}})-3f(1+\\sin^{2}x)}{x^{2}}=2$，求 $f'(1)$。",
+    "options": null,
+    "answer": "$f'(1)=-1$",
+    "analysis": "由 $\\displaystyle\\lim_{x\\to 0}\\dfrac{f(e^{x^{2}})-3f(1+\\sin^{2}x)}{x^{2}}=2$ 得 $\\displaystyle\\lim_{x\\to 0}[f(e^{x^{2}})-3f(1+\\sin^{2}x)]=0$，即 $f(1)=0$。又 $\\displaystyle\\lim_{x\\to 0}\\dfrac{f(e^{x^{2}})-3f(1+\\sin^{2}x)}{x^{2}}=\\lim_{x\\to 0}\\dfrac{f(e^{x^{2}})-f(1)}{x^{2}}-3\\lim_{x\\to 0}\\dfrac{f(1+\\sin^{2}x)-f(1)}{x^{2}}=\\lim_{x\\to 0}\\dfrac{f(e^{x^{2}})-f(1)}{e^{x^{2}}-1}\\cdot\\dfrac{e^{x^{2}}-1}{x^{2}}-3\\lim_{x\\to 0}\\dfrac{f(1+\\sin^{2}x)-f(1)}{\\sin^{2}x}\\cdot\\dfrac{\\sin^{2}x}{x^{2}}=f'(1)-3f'(1)=-2f'(1)$。故 $-2f'(1)=2$，$f'(1)=-1$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-18",
+    "year": 2022,
+    "type": "big",
+    "number": 18,
+    "subject": "考研数学二",
+    "stem": "设函数 $y(x)$ 是微分方程 $2xy'-4y=2\\ln x-1$ 满足条件 $y(1)=\\dfrac{1}{4}$ 的解，求曲线 $y=y(x)\\ (1\\le x\\le e)$ 的弧长。",
+    "options": null,
+    "answer": "$\\dfrac{1}{4}(e^{2}+1)$",
+    "analysis": "方程化为 $y'-\\dfrac{2}{x}y=\\dfrac{2\\ln x-1}{2x}$，由一阶线性方程通解公式 $y=e^{\\int\\!\\frac{2}{x}dx}\\!\\left[\\int\\!\\dfrac{2\\ln x-1}{2x}e^{-\\int\\!\\frac{2}{x}dx}dx+C\\right]=x^{2}\\!\\left[\\int\\!\\dfrac{2\\ln x-1}{2x^{3}}dx+C\\right]=-\\dfrac{1}{2}\\ln x+Cx^{2}$。代入 $y(1)=\\dfrac{1}{4}$ 得 $C=\\dfrac{1}{4}$，故 $y=-\\dfrac{1}{2}\\ln x+\\dfrac{1}{4}x^{2}$，$y'=\\dfrac{x}{2}-\\dfrac{1}{2x}$。弧长 $L=\\displaystyle\\int_{1}^{e}\\sqrt{1+y'^{2}}dx=\\int_{1}^{e}\\sqrt{1+\\!\\left(\\dfrac{x}{2}-\\dfrac{1}{2x}\\right)^{2}}dx=\\int_{1}^{e}\\!\\left(\\dfrac{x}{2}+\\dfrac{1}{2x}\\right)dx=\\left[\\dfrac{1}{4}x^{2}+\\dfrac{1}{2}\\ln x\\right]_{1}^{e}=\\dfrac{1}{4}(e^{2}+1)$。",
+    "knowledge": [
+      "常微分方程",
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2022-19",
+    "year": 2022,
+    "type": "big",
+    "number": 19,
+    "subject": "考研数学二",
+    "stem": "已知平面区域 $D$（由上半圆 $x^{2}+y^{2}\\le 4,\\ y\\ge 0$ 与三角形 $D_{2}:\\ -2\\le x\\le 0,\\ 0\\le y\\le x+2$ 合并而成，$D_{1}$ 为 $y$ 轴右侧的四分之一圆），计算 $I=\\displaystyle\\iint\\limits_{D}\\dfrac{(x-y)^{2}}{x^{2}+y^{2}}dxdy$。",
+    "options": null,
+    "answer": "$2\\pi-2$",
+    "analysis": "化为极坐标，$D_{1}$ 对应 $0\\le\\varphi\\le\\dfrac{\\pi}{2},\\ 0\\le r\\le 2$；$D_{2}$ 对应 $\\dfrac{\\pi}{2}\\le\\varphi\\le\\pi,\\ 0\\le r\\le\\dfrac{2}{\\sin\\varphi-\\cos\\varphi}$。$I=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}(\\cos\\varphi-\\sin\\varphi)^{2}d\\varphi\\int_{0}^{2}r\\,dr+\\int_{\\frac{\\pi}{2}}^{\\pi}(\\cos\\varphi-\\sin\\varphi)^{2}d\\varphi\\int_{0}^{\\frac{2}{\\sin\\varphi-\\cos\\varphi}}r\\,dr=2\\int_{0}^{\\frac{\\pi}{2}}(1-\\sin 2\\varphi)d\\varphi+2\\int_{\\frac{\\pi}{2}}^{\\pi}d\\varphi=2(\\varphi-\\sin^{2}\\varphi)\\Big|_{0}^{\\frac{\\pi}{2}}+\\pi=2\\!\\left(\\dfrac{\\pi}{2}-1\\right)+\\pi=2\\pi-2$。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "较难",
+    "image": "math_assets/2022_q19.jpg"
+  },
+  {
+    "id": "math2-2022-20",
+    "year": 2022,
+    "type": "big",
+    "number": 20,
+    "subject": "考研数学二",
+    "stem": "已知可微函数 $f(u,v)$ 满足 $\\dfrac{\\partial f(u,v)}{\\partial u}-\\dfrac{\\partial f(u,v)}{\\partial v}=2(u-v)e^{-(u+v)}$，且满足 $f(u,0)=u^{2}e^{-u}$。（1）记 $g(x,y)=f(x,y-x)$，求 $\\dfrac{\\partial g(x,y)}{\\partial x}$；（2）求 $f(u,v)$ 的表达式和极值。",
+    "options": null,
+    "answer": "（1）$\\dfrac{\\partial g(x,y)}{\\partial x}=(4x-2y)e^{-y}$；（2）$f(u,v)=(u^{2}+v^{2})e^{-(u+v)}$，$f(0,0)=0$ 为极小值。",
+    "analysis": "（1）$\\dfrac{\\partial g}{\\partial x}=f_{1}'-f_{2}'=2(x-y+x)e^{-(x+y-x)}=(4x-2y)e^{-y}$。（2）由（1）$g(x,y)=f(x,y-x)=\\displaystyle\\int(4x-2y)e^{-y}dx=2x(x-y)e^{-y}+\\varphi(y)$。令 $x=u,\\ y-x=v$，则 $f(u,v)=-2uve^{-(u+v)}+\\varphi(u+v)$。又 $f(u,0)=u^{2}e^{-u}$，得 $\\varphi(u)=u^{2}e^{-u}$，故 $f(u,v)=-2uve^{-(u+v)}+(u+v)^{2}e^{-(u+v)}=(u^{2}+v^{2})e^{-(u+v)}$。令 $\\begin{cases}f_{u}'=2ue^{-(u+v)}-(u^{2}+v^{2})e^{-(u+v)}=0\\\\f_{v}'=2ve^{-(u+v)}-(u^{2}+v^{2})e^{-(u+v)}=0\\end{cases}$，得驻点 $(0,0)$ 和 $(1,1)$。对 $(0,0)$，$A=2,\\ B=0,\\ C=2$，$AC-B^{2}>0,\\ A>0$，$f(0,0)=0$ 为极小值；对 $(1,1)$，$A=0,\\ B=-2,\\ C=0$，$AC-B^{2}<0$，不是极值。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-21",
+    "year": 2022,
+    "type": "big",
+    "number": 21,
+    "subject": "考研数学二",
+    "stem": "设 $f(x)$ 在 $(-\\infty,+\\infty)$ 有二阶连续导数，证明：$f''(x)\\ge 0$ 的充要条件为对于不同实数 $a,b$，有 $f\\!\\left(\\dfrac{a+b}{2}\\right)\\le\\dfrac{1}{b-a}\\displaystyle\\int_{a}^{b}f(x)dx$。",
+    "options": null,
+    "answer": "见解析。",
+    "analysis": "必要性：将 $f(x)$ 在点 $x=\\dfrac{a+b}{2}$ 处用泰勒公式展开：$f(x)=f\\!\\left(\\dfrac{a+b}{2}\\right)+f'\\!\\left(\\dfrac{a+b}{2}\\right)\\!\\left(x-\\dfrac{a+b}{2}\\right)+\\dfrac{f''(\\xi)}{2}\\!\\left(x-\\dfrac{a+b}{2}\\right)^{2}$，$\\xi\\in\\!\\left(x,\\dfrac{a+b}{2}\\right)$。积分得 $\\displaystyle\\int_{a}^{b}f(x)dx=(b-a)f\\!\\left(\\dfrac{a+b}{2}\\right)+f'\\!\\left(\\dfrac{a+b}{2}\\right)\\int_{a}^{b}\\!\\left(x-\\dfrac{a+b}{2}\\right)dx+\\int_{a}^{b}\\dfrac{f''(\\xi)}{2}\\!\\left(x-\\dfrac{a+b}{2}\\right)^{2}dx$。由于 $f''(x)\\ge 0$，故 $\\displaystyle\\int_{a}^{b}f(x)dx\\ge (b-a)f\\!\\left(\\dfrac{a+b}{2}\\right)$，即 $f\\!\\left(\\dfrac{a+b}{2}\\right)\\le\\dfrac{1}{b-a}\\displaystyle\\int_{a}^{b}f(x)dx$。充分性：由条件对任意 $x_{0}$ 及 $\\delta>0$，令 $a=x_{0}-\\delta,\\ b=x_{0}+\\delta$，得 $f(x_{0})\\le\\dfrac{1}{2\\delta}\\displaystyle\\int_{x_{0}-\\delta}^{x_{0}+\\delta}f(x)dx$。整理并取极限 $\\delta\\to 0$：$\\displaystyle\\lim_{\\delta\\to 0}\\dfrac{\\int_{x_{0}-\\delta}^{x_{0}+\\delta}f(x)dx-2\\delta f(x_{0})}{\\delta^{3}}=\\lim_{\\delta\\to 0}\\dfrac{f(x_{0}+\\delta)+f(x_{0}-\\delta)-2f(x_{0})}{3\\delta^{2}}=\\dfrac{1}{3}f''(x_{0})\\ge 0$，故 $f''(x_{0})\\ge 0$。由 $x_{0}$ 任意性得证。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2022-22",
+    "year": 2022,
+    "type": "big",
+    "number": 22,
+    "subject": "考研数学二",
+    "stem": "已知二次型 $f(x_{1},x_{2},x_{3})=3x_{1}^{2}+4x_{2}^{2}+3x_{3}^{2}+2x_{1}x_{3}$。（1）求正交变换 $x=Qy$ 将 $f(x_{1},x_{2},x_{3})$ 化为标准形；（2）证明：$\\displaystyle\\min_{x\\neq 0}\\dfrac{f(x)}{x^{T}x}=2$。",
+    "options": null,
+    "answer": "（1）$f=2y_{1}^{2}+4y_{2}^{2}+4y_{3}^{2}$；（2）见解析。",
+    "analysis": "（1）二次型对应矩阵 $A=\\begin{pmatrix}3&0&1\\\\0&4&0\\\\1&0&3\\end{pmatrix}$。$|A-\\lambda E|=\\begin{vmatrix}3-\\lambda&0&1\\\\0&4-\\lambda&0\\\\1&0&3-\\lambda\\end{vmatrix}=-(\\lambda-4)^{2}(\\lambda-2)=0$，解得 $\\lambda_{1}=2,\\ \\lambda_{2}=\\lambda_{3}=4$。$\\lambda_{1}=2$ 对应特征向量 $\\xi_{1}=(-1,0,1)^{T}$；$\\lambda_{2}=\\lambda_{3}=4$ 对应特征向量 $\\xi_{2}=(0,1,0)^{T},\\ \\xi_{3}=(1,0,1)^{T}$。它们已两两正交，单位化得 $\\eta_{1}=\\!\\left(-\\dfrac{\\sqrt{2}}{2},0,\\dfrac{\\sqrt{2}}{2}\\right)^{T},\\ \\eta_{2}=(0,1,0)^{T},\\ \\eta_{3}=\\!\\left(\\dfrac{\\sqrt{2}}{2},0,\\dfrac{\\sqrt{2}}{2}\\right)^{T}$。令 $Q=(\\eta_{1},\\eta_{2},\\eta_{3})$，则 $x=Qy$ 时 $f(y_{1},y_{2},y_{3})=2y_{1}^{2}+4y_{2}^{2}+4y_{3}^{2}$。（2）$\\displaystyle\\dfrac{f(x)}{x^{T}x}=\\dfrac{f(y)}{y^{T}y}=\\dfrac{2y_{1}^{2}+4y_{2}^{2}+4y_{3}^{2}}{y_{1}^{2}+y_{2}^{2}+y_{3}^{2}}=2+\\dfrac{2y_{2}^{2}+2y_{3}^{2}}{y_{1}^{2}+y_{2}^{2}+y_{3}^{2}}\\ge 2$，当 $y_{2}=y_{3}=0,\\ y_{1}\\neq 0$ 时取等号，故 $\\displaystyle\\min_{x\\neq 0}\\dfrac{f(x)}{x^{T}x}=2$。",
+    "knowledge": [
+      "二次型"
+    ],
+    "difficulty": "中等",
+    "image": null
+  }
+]

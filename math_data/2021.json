@@ -1,0 +1,407 @@
+[
+  {
+    "id": "math2-2021-1",
+    "year": 2021,
+    "type": "choice",
+    "number": 1,
+    "subject": "考研数学二",
+    "stem": "当 $x\\to 0$ 时，$\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt$ 是 $x^{7}$ 的（　）",
+    "options": {
+      "A": "低阶无穷小",
+      "B": "等价无穷小",
+      "C": "高阶无穷小",
+      "D": "同阶但非等价无穷小"
+    },
+    "answer": "C",
+    "analysis": "$\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt}{x^{7}}=\\lim_{x\\to 0}\\dfrac{2x\\left(e^{x^{6}}-1\\right)}{7x^{6}}=\\lim_{x\\to 0}\\dfrac{2x^{6}}{7x^{5}}=0$，故 $\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt$ 是 $x^{7}$ 的高阶无穷小，选 C。",
+    "knowledge": [
+      "函数与极限"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2021-2",
+    "year": 2021,
+    "type": "choice",
+    "number": 2,
+    "subject": "考研数学二",
+    "stem": "函数 $f(x)=\\begin{cases}\\dfrac{e^{x}-1}{x},&x\\neq 0\\\\1,&x=0\\end{cases}$ 在 $x=0$ 处（　）",
+    "options": {
+      "A": "连续且取极大值",
+      "B": "连续且取得极小值",
+      "C": "可导且导数等于零",
+      "D": "可导且导数不为零"
+    },
+    "answer": "D",
+    "analysis": "因为 $\\lim_{x\\to 0}\\dfrac{e^{x}-1}{x}=1=f(0)$，故函数在 $x=0$ 处连续；又因为 $\\lim_{x\\to 0}\\dfrac{\\dfrac{e^{x}-1}{x}-1}{x}=\\lim_{x\\to 0}\\dfrac{e^{x}-1-x}{x^{2}}=\\dfrac{1}{2}$，故 $f(x)$ 在 $x=0$ 处可导且导数为 $\\dfrac{1}{2}\\neq 0$，选 D。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2021-3",
+    "year": 2021,
+    "type": "choice",
+    "number": 3,
+    "subject": "考研数学二",
+    "stem": "有一圆柱体底面半径与高随时间变化的速率分别为 $2\\,\\mathrm{cm}/\\mathrm{s},-3\\,\\mathrm{cm}/\\mathrm{s}$，当底面半径为 $10\\,\\mathrm{cm}$，高为 $5\\,\\mathrm{cm}$ 时，圆柱体的体积与表面积随时间变化的速率分别为（　）",
+    "options": {
+      "A": "$125\\pi\\,\\mathrm{cm}^{3}/\\mathrm{s},\\,40\\pi\\,\\mathrm{cm}^{2}/\\mathrm{s}$",
+      "B": "$125\\pi\\,\\mathrm{cm}^{3}/\\mathrm{s},\\,-40\\pi\\,\\mathrm{cm}^{2}/\\mathrm{s}$",
+      "C": "$-100\\pi\\,\\mathrm{cm}^{3}/\\mathrm{s},\\,40\\pi\\,\\mathrm{cm}^{2}/\\mathrm{s}$",
+      "D": "$-100\\pi\\,\\mathrm{cm}^{3}/\\mathrm{s},\\,-40\\pi\\,\\mathrm{cm}^{2}/\\mathrm{s}$"
+    },
+    "answer": "D",
+    "analysis": "由题意知 $\\dfrac{dr}{dt}=2,\\ \\dfrac{dh}{dt}=-3$，又 $V=\\pi r^{2}h,\\ S=2\\pi rh$。则 $\\dfrac{dV}{dt}=2\\pi rh\\dfrac{dr}{dt}+\\pi r^{2}\\dfrac{dh}{dt}$，$\\dfrac{dS}{dt}=2\\pi h\\dfrac{dr}{dt}+2\\pi r\\dfrac{dh}{dt}$。当 $r=10,\\ h=5$ 时，$\\dfrac{dV}{dt}=-100\\pi,\\ \\dfrac{dS}{dt}=-40\\pi$，选 D。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-4",
+    "year": 2021,
+    "type": "choice",
+    "number": 4,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)=ax-b\\ln x\\,(a>0)$ 有 $2$ 个零点，则 $\\dfrac{b}{a}$ 的取值范围是（　）",
+    "options": {
+      "A": "$(e,+\\infty)$",
+      "B": "$(0,e)$",
+      "C": "$\\left(0,\\dfrac{1}{e}\\right)$",
+      "D": "$\\left(\\dfrac{1}{e},+\\infty\\right)$"
+    },
+    "answer": "A",
+    "analysis": "$f(x)=ax-b\\ln x$。若 $b<0$，不满足条件，舍去；若 $b>0$，令 $f'(x)=a-\\dfrac{b}{x}=0$，得 $x=\\dfrac{b}{a}$。在 $\\left(0,\\dfrac{b}{a}\\right)$ 上 $f'(x)<0$，在 $\\left(\\dfrac{b}{a},+\\infty\\right)$ 上 $f'(x)>0$。又 $\\lim_{x\\to 0^{+}}f(x)=+\\infty,\\ \\lim_{x\\to+\\infty}f(x)=+\\infty$。令 $f\\left(\\dfrac{b}{a}\\right)=b-b\\ln\\dfrac{b}{a}=b\\left(1-\\ln\\dfrac{b}{a}\\right)<0$，得 $\\ln\\dfrac{b}{a}>1$，即 $\\dfrac{b}{a}>e$。故选 A。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-5",
+    "year": 2021,
+    "type": "choice",
+    "number": 5,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)=\\sec x$ 在 $x=0$ 处的 $2$ 次泰勒多项式为 $1+ax+bx^{2}$，则（　）",
+    "options": {
+      "A": "$a=1,\\ b=-\\dfrac{1}{2}$",
+      "B": "$a=1,\\ b=\\dfrac{1}{2}$",
+      "C": "$a=0,\\ b=-\\dfrac{1}{2}$",
+      "D": "$a=0,\\ b=\\dfrac{1}{2}$"
+    },
+    "answer": "D",
+    "analysis": "由 $f(x)=f(0)+f'(0)x+\\dfrac{f''(0)}{2!}x^{2}+o(x^{2})$ 知，当 $f(x)=\\sec x$ 时，$f(0)=\\sec 0=1$，$f'(0)=0,\\ f''(0)=1$，故 $f(x)=\\sec x=1+\\dfrac{1}{2}x^{2}+o(x^{2})$，即 $a=0,\\ b=\\dfrac{1}{2}$。故选 D。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2021-6",
+    "year": 2021,
+    "type": "choice",
+    "number": 6,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x,y)$ 可微，且 $f(x+1,e^{x})=x(x+1)^{2},\\ f(x,x^{2})=2x^{2}\\ln x$，则 $df(1,1)=$（　）",
+    "options": {
+      "A": "$dx+dy$",
+      "B": "$dx-dy$",
+      "C": "$dy$",
+      "D": "$-dy$"
+    },
+    "answer": "C",
+    "analysis": "对 $f(x+1,e^{x})=x(x+1)^{2}$ 两边同时对 $x$ 求导：$f_{1}'(x+1,e^{x})+f_{2}'(x+1,e^{x})e^{x}=(x+1)^{2}+2x(x+1)$。令 $x=0$ 得 $f_{1}'(1,1)+f_{2}'(1,1)=1$。对 $f(x,x^{2})=2x^{2}\\ln x$ 两边对 $x$ 求导：$f_{1}'(x,x^{2})+f_{2}'(x,x^{2})\\cdot 2x=4x\\ln x+2x^{2}\\cdot\\dfrac{1}{x}$。令 $x=1$ 得 $f_{1}'(1,1)+2f_{2}'(1,1)=2$。联立解得 $f_{1}'(1,1)=0,\\ f_{2}'(1,1)=1$，所以 $df(1,1)=dy$，选 C。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-7",
+    "year": 2021,
+    "type": "choice",
+    "number": 7,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)$ 在区间 $[0,1]$ 上连续，则 $\\int_{0}^{1}f(x)dx=$（　）",
+    "options": {
+      "A": "$\\lim_{n\\to\\infty}\\sum_{k=1}^{n}f\\!\\left(\\dfrac{2k-1}{2n}\\right)\\dfrac{1}{2n}$",
+      "B": "$\\lim_{n\\to\\infty}\\sum_{k=1}^{n}f\\!\\left(\\dfrac{2k-1}{2n}\\right)\\dfrac{1}{n}$",
+      "C": "$\\lim_{n\\to\\infty}\\sum_{k=1}^{2n}f\\!\\left(\\dfrac{k-1}{2n}\\right)\\dfrac{1}{n}$",
+      "D": "$\\lim_{n\\to\\infty}\\sum_{k=1}^{2n}f\\!\\left(\\dfrac{k}{2n}\\right)\\dfrac{2}{n}$"
+    },
+    "answer": "B",
+    "analysis": "由定积分的定义，将 $[0,1]$ $n$ 等分，取每个小区间中点的函数值做小矩形的高，则 $\\int_{0}^{1}f(x)dx=\\lim_{n\\to\\infty}\\sum_{k=1}^{n}f\\!\\left(\\dfrac{2k-1}{2n}\\right)\\dfrac{1}{n}$。故选 B。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-8",
+    "year": 2021,
+    "type": "choice",
+    "number": 8,
+    "subject": "考研数学二",
+    "stem": "二次型 $f(x_{1},x_{2},x_{3})=(x_{1}+x_{2})^{2}+(x_{2}+x_{3})^{2}-(x_{3}-x_{1})^{2}$ 的正惯性指数与负惯性指数依次为（　）",
+    "options": {
+      "A": "$2,0$",
+      "B": "$1,1$",
+      "C": "$2,1$",
+      "D": "$1,2$"
+    },
+    "answer": "B",
+    "analysis": "展开得 $f(x_{1},x_{2},x_{3})=2x_{2}^{2}+2x_{1}x_{2}+2x_{2}x_{3}+2x_{1}x_{3}$，二次型对应矩阵 $A=\\begin{pmatrix}0&1&1\\\\1&2&1\\\\1&1&0\\end{pmatrix}$。$|\\lambda E-A|=\\begin{vmatrix}\\lambda&-1&-1\\\\-1&\\lambda-2&-1\\\\-1&-1&\\lambda\\end{vmatrix}=\\lambda(\\lambda+1)(\\lambda-3)$，特征值为 $\\lambda_{1}=0,\\ \\lambda_{2}=-1,\\ \\lambda_{3}=3$，故正惯性指数 $p=1$，负惯性指数 $q=1$。选 B。",
+    "knowledge": [
+      "二次型"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-9",
+    "year": 2021,
+    "type": "choice",
+    "number": 9,
+    "subject": "考研数学二",
+    "stem": "设 $3$ 阶矩阵 $A=(\\alpha_{1},\\alpha_{2},\\alpha_{3}),\\ B=(\\beta_{1},\\beta_{2},\\beta_{3})$，若向量组 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 可以由向量组 $\\beta_{1},\\beta_{2}$ 线性表出，则（　）",
+    "options": {
+      "A": "$Ax=0$ 的解均为 $Bx=0$ 的解",
+      "B": "$A^{T}x=0$ 的解均为 $B^{T}x=0$ 的解",
+      "C": "$Bx=0$ 的解均为 $Ax=0$ 的解",
+      "D": "$B^{T}x=0$ 的解均为 $A^{T}x=0$ 的解"
+    },
+    "answer": "D",
+    "analysis": "因为 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 可由 $\\beta_{1},\\beta_{2}$ 线性表出，故存在矩阵 $P$（$3\\times 2$）使 $A=BP$。于是当 $B^{T}x_{0}=0$ 时，$A^{T}x_{0}=(BP)^{T}x_{0}=P^{T}B^{T}x_{0}=0$ 恒成立，即 $B^{T}x=0$ 的解均为 $A^{T}x=0$ 的解。选 D。",
+    "knowledge": [
+      "线性方程组",
+      "向量组"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2021-10",
+    "year": 2021,
+    "type": "choice",
+    "number": 10,
+    "subject": "考研数学二",
+    "stem": "已知矩阵 $A=\\begin{pmatrix}1&0&-1\\\\2&-1&1\\\\-1&2&5\\end{pmatrix}$，若下三角可逆矩阵 $P$ 和上三角可逆矩阵 $Q$，使得 $PAQ$ 为对角矩阵，则 $P,Q$ 分别取（　）",
+    "options": {
+      "A": "$P=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&1\\end{pmatrix},\\ Q=\\begin{pmatrix}1&0&1\\\\0&1&3\\\\0&0&1\\end{pmatrix}$",
+      "B": "$P=\\begin{pmatrix}1&0&0\\\\2&-1&0\\\\-3&2&1\\end{pmatrix},\\ Q=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}$",
+      "C": "$P=\\begin{pmatrix}1&0&0\\\\2&-1&0\\\\-3&2&1\\end{pmatrix},\\ Q=\\begin{pmatrix}1&0&1\\\\0&1&3\\\\0&0&1\\end{pmatrix}$",
+      "D": "$P=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\1&3&1\\end{pmatrix},\\ Q=\\begin{pmatrix}1&2&-3\\\\0&-1&2\\\\0&0&1\\end{pmatrix}$"
+    },
+    "answer": "C",
+    "analysis": "代入验证：$\\begin{pmatrix}1&0&0\\\\2&-1&0\\\\-3&2&1\\end{pmatrix}\\begin{pmatrix}1&0&-1\\\\2&-1&1\\\\-1&2&5\\end{pmatrix}\\begin{pmatrix}1&0&1\\\\0&1&3\\\\0&0&1\\end{pmatrix}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&10\\end{pmatrix}$ 为对角矩阵。故选 C。",
+    "knowledge": [
+      "矩阵"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2021-11",
+    "year": 2021,
+    "type": "big",
+    "number": 11,
+    "subject": "考研数学二",
+    "stem": "$\\int_{-\\infty}^{+\\infty}|x|\\,3^{-x^{2}}dx=$ ______。",
+    "options": null,
+    "answer": "$\\dfrac{1}{\\ln 3}$",
+    "analysis": "$\\int_{-\\infty}^{+\\infty}|x|3^{-x^{2}}dx=2\\int_{0}^{+\\infty}x\\,3^{-x^{2}}dx=-\\int_{0}^{+\\infty}3^{-x^{2}}d(-x^{2})=-\\dfrac{1}{\\ln 3}\\,3^{-x^{2}}\\Big|_{0}^{+\\infty}=\\dfrac{1}{\\ln 3}$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2021-12",
+    "year": 2021,
+    "type": "big",
+    "number": 12,
+    "subject": "考研数学二",
+    "stem": "设函数 $y=y(x)$ 由参数方程 $\\begin{cases}x=2e^{t}+t+1\\\\y=4(t-1)e^{t}+t^{2}\\end{cases}$ 确定，则 $\\dfrac{d^{2}y}{dx^{2}}\\Big|_{t=0}=$ ______。",
+    "options": null,
+    "answer": "$\\dfrac{2}{3}$",
+    "analysis": "$\\dfrac{dy}{dx}=\\dfrac{4te^{t}+2t}{2e^{t}+1}$，$\\dfrac{d^{2}y}{dx^{2}}=\\dfrac{(4e^{t}+4te^{t}+2)(2e^{t}+1)-(4te^{t}+2t)\\cdot 2e^{t}}{(2e^{t}+1)^{3}}$。将 $t=0$ 代入得 $\\dfrac{d^{2}y}{dx^{2}}\\Big|_{t=0}=\\dfrac{2}{3}$。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-13",
+    "year": 2021,
+    "type": "big",
+    "number": 13,
+    "subject": "考研数学二",
+    "stem": "设函数 $z=z(x,y)$ 由方程 $(x+1)z+y\\ln z-\\arctan(2xy)=1$ 确定，则 $\\dfrac{\\partial z}{\\partial x}\\Big|_{(0,2)}=$ ______。",
+    "options": null,
+    "answer": "$1$",
+    "analysis": "方程两端同时对 $x$ 求导：$z+(x+1)\\dfrac{\\partial z}{\\partial x}+y\\cdot\\dfrac{1}{z}\\dfrac{\\partial z}{\\partial x}-\\dfrac{2y}{1+4x^{2}y^{2}}=0$。将 $x=0,\\ y=2$ 代入原方程得 $z=1$，再将 $x=0,\\ y=2,\\ z=1$ 代入上式得 $\\dfrac{\\partial z}{\\partial x}\\Big|_{(0,2)}=1$。",
+    "knowledge": [
+      "多元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-14",
+    "year": 2021,
+    "type": "big",
+    "number": 14,
+    "subject": "考研数学二",
+    "stem": "已知函数 $f(t)=\\int_{1}^{t^{2}}dx\\int_{\\sqrt{x}}^{t}\\sin\\dfrac{x}{y}\\,dy$，则 $f'\\!\\left(\\dfrac{\\pi}{2}\\right)=$ ______。",
+    "options": null,
+    "answer": "$\\dfrac{\\pi}{2}\\cos\\dfrac{2}{\\pi}$",
+    "analysis": "交换积分次序得 $f(t)=\\int_{1}^{t}dy\\int_{1}^{y^{2}}\\sin\\dfrac{x}{y}\\,dx=\\int_{1}^{t}\\!\\left(y\\cos\\dfrac{1}{y}-y\\cos y\\right)dy$。求导得 $f'(t)=t\\cos\\dfrac{1}{t}-t\\cos t$，故 $f'\\!\\left(\\dfrac{\\pi}{2}\\right)=\\dfrac{\\pi}{2}\\cos\\dfrac{2}{\\pi}$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "较难",
+    "image": null
+  },
+  {
+    "id": "math2-2021-15",
+    "year": 2021,
+    "type": "big",
+    "number": 15,
+    "subject": "考研数学二",
+    "stem": "微分方程 $y'''-y=0$ 的通解为 $y=$ ______。",
+    "options": null,
+    "answer": "$y=C_{1}e^{x}+e^{-\\frac{x}{2}}\\!\\left(C_{2}\\cos\\dfrac{\\sqrt{3}}{2}x+C_{3}\\sin\\dfrac{\\sqrt{3}}{2}x\\right)$",
+    "analysis": "微分方程的特征方程为 $\\lambda^{3}-1=0$，解得特征根 $\\lambda_{1}=1,\\ \\lambda_{2,3}=-\\dfrac{1}{2}\\pm\\dfrac{\\sqrt{3}}{2}i$。故通解为 $y=C_{1}e^{x}+e^{-\\frac{x}{2}}\\!\\left(C_{2}\\cos\\dfrac{\\sqrt{3}}{2}x+C_{3}\\sin\\dfrac{\\sqrt{3}}{2}x\\right)$，其中 $C_{1},C_{2},C_{3}$ 为任意常数。",
+    "knowledge": [
+      "常微分方程"
+    ],
+    "difficulty": "基础",
+    "image": null
+  },
+  {
+    "id": "math2-2021-16",
+    "year": 2021,
+    "type": "big",
+    "number": 16,
+    "subject": "考研数学二",
+    "stem": "多项式 $f(x)=\\begin{vmatrix}x&x&1&2x\\\\1&x&2&-1\\\\2&1&x&1\\\\2&-1&1&x\\end{vmatrix}$ 中的 $x^{3}$ 项的系数为 ______。",
+    "options": null,
+    "answer": "$-5$",
+    "analysis": "由行列式按行按列展开定理，含 $x^{3}$ 的项为 $(-1)^{1+2+2}\\cdot 4x^{3}+(-1)^{1}\\cdot x^{3}=-5x^{3}$，故 $x^{3}$ 项的系数为 $-5$。",
+    "knowledge": [
+      "行列式"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-17",
+    "year": 2021,
+    "type": "big",
+    "number": 17,
+    "subject": "考研数学二",
+    "stem": "求极限 $\\lim\\limits_{x\\to 0}\\!\\left(\\dfrac{1+\\int_{0}^{x}e^{t^{2}}dt}{e^{x}-1}-\\dfrac{1}{\\sin x}\\right)$。",
+    "options": null,
+    "answer": "$\\dfrac{1}{2}$",
+    "analysis": "$\\lim\\limits_{x\\to 0}\\!\\left(\\dfrac{1+\\int_{0}^{x}e^{t^{2}}dt}{e^{x}-1}-\\dfrac{1}{\\sin x}\\right)=\\lim\\limits_{x\\to 0}\\dfrac{\\sin x\\left(1+\\int_{0}^{x}e^{t^{2}}dt\\right)-(e^{x}-1)}{(e^{x}-1)\\sin x}=\\lim\\limits_{x\\to 0}\\dfrac{\\sin x\\left(1+\\int_{0}^{x}e^{t^{2}}dt\\right)-(e^{x}-1)}{x^{2}}$。再用洛必达法则：$=\\lim\\limits_{x\\to 0}\\dfrac{\\cos x\\left(1+\\int_{0}^{x}e^{t^{2}}dt\\right)+\\sin x\\,e^{x^{2}}-e^{x}}{2x}=\\lim\\limits_{x\\to 0}\\dfrac{\\cos x-1+\\cos x\\int_{0}^{x}e^{t^{2}}dt+\\sin x\\,e^{x^{2}}+1-e^{x}}{2x}=\\lim\\limits_{x\\to 0}\\dfrac{\\cos x-1}{2x}+\\lim\\limits_{x\\to 0}\\dfrac{\\cos x\\int_{0}^{x}e^{t^{2}}dt}{2x}+\\lim\\limits_{x\\to 0}\\dfrac{\\sin x\\,e^{x^{2}}}{2x}+\\lim\\limits_{x\\to 0}\\dfrac{1-e^{x}}{2x}=0+\\dfrac{1}{2}+\\dfrac{1}{2}-\\dfrac{1}{2}=\\dfrac{1}{2}$。",
+    "knowledge": [
+      "函数与极限",
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-18",
+    "year": 2021,
+    "type": "big",
+    "number": 18,
+    "subject": "考研数学二",
+    "stem": "已知 $f(x)=\\dfrac{x|x|}{1+x}$，求曲线 $y=f(x)$ 的凹凸性及渐近线。",
+    "options": null,
+    "answer": "凹区间 $(-\\infty,-1)$、$(0,+\\infty)$，凸区间 $(-1,0)$；铅直渐近线 $x=-1$；斜渐近线 $y=x-1$ 与 $y=-x+1$。",
+    "analysis": "由题设知 $x=-1$ 为间断点。当 $x>0$ 时，$f(x)=\\dfrac{x^{2}}{1+x}$，$f''(x)=\\dfrac{2}{(1+x)^{3}}>0$，曲线在 $(0,+\\infty)$ 上凹；当 $x<0$ 且 $x\\neq -1$ 时，$f(x)=-\\dfrac{x^{2}}{1+x}$，$f''(x)=-\\dfrac{2}{(1+x)^{3}}$。当 $x<-1$ 时 $f''(x)>0$，曲线在 $(-\\infty,-1)$ 上凹；当 $-1<x<0$ 时 $f''(x)<0$，曲线在 $(-1,0)$ 上凸。渐近线：$\\lim_{x\\to\\infty}f(x)=\\infty$，无水平渐近线；$\\lim_{x\\to-1}f(x)=\\infty$，$x=-1$ 为铅直渐近线；$\\lim_{x\\to+\\infty}\\dfrac{f(x)}{x}=1,\\ \\lim_{x\\to+\\infty}[f(x)-x]=-1$，$y=x-1$ 为斜渐近线；$\\lim_{x\\to-\\infty}\\dfrac{f(x)}{x}=-1,\\ \\lim_{x\\to-\\infty}[f(x)+x]=1$，$y=-x+1$ 为斜渐近线。",
+    "knowledge": [
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-19",
+    "year": 2021,
+    "type": "big",
+    "number": 19,
+    "subject": "考研数学二",
+    "stem": "设函数 $f(x)$ 满足 $\\displaystyle\\int\\!\\dfrac{f(x)}{\\sqrt{x}}dx=\\dfrac{1}{6}x^{2}-x+C$，$L$ 为曲线 $y=f(x)\\,(4\\le x\\le 9)$，$L$ 的弧长为 $s$，$L$ 绕 $x$ 轴旋转一周所形成的曲面的面积为 $A$，求 $s$ 和 $A$。",
+    "options": null,
+    "answer": "$s=\\dfrac{22}{3},\\ A=\\dfrac{425\\pi}{9}$",
+    "analysis": "对 $\\displaystyle\\int\\!\\dfrac{f(x)}{\\sqrt{x}}dx=\\dfrac{1}{6}x^{2}-x+C$ 两端关于 $x$ 求导得 $\\dfrac{f(x)}{\\sqrt{x}}=\\dfrac{1}{3}x-1$，故 $f(x)=\\dfrac{1}{3}x^{\\frac{3}{2}}-\\sqrt{x}$，$f'(x)=\\dfrac{1}{2}x^{\\frac{1}{2}}-\\dfrac{1}{2}x^{-\\frac{1}{2}}$。$s=\\int_{4}^{9}\\sqrt{1+[f'(x)]^{2}}dx=\\int_{4}^{9}\\!\\left(\\dfrac{1}{2}x^{\\frac{1}{2}}+\\dfrac{1}{2}x^{-\\frac{1}{2}}\\right)dx=\\left.\\left(\\dfrac{1}{3}x^{\\frac{3}{2}}+x^{\\frac{1}{2}}\\right)\\right|_{4}^{9}=\\dfrac{22}{3}$。$A=2\\pi\\int_{4}^{9}y\\sqrt{1+y'^{2}}dx=2\\pi\\int_{4}^{9}\\!\\left(\\dfrac{1}{3}x^{\\frac{3}{2}}-\\sqrt{x}\\right)\\!\\left(\\dfrac{1}{2}x^{\\frac{1}{2}}+\\dfrac{1}{2}x^{-\\frac{1}{2}}\\right)dx=\\dfrac{\\pi}{3}\\int_{4}^{9}(x-3)(x+1)dx=\\dfrac{425\\pi}{9}$。",
+    "knowledge": [
+      "一元积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-20",
+    "year": 2021,
+    "type": "big",
+    "number": 20,
+    "subject": "考研数学二",
+    "stem": "设 $y=y(x)\\,(x>0)$ 是微分方程 $xy'-6y=-6$ 满足条件 $y(\\sqrt{3})=10$ 的解。（1）求 $y(x)$；（2）设 $P$ 为曲线 $y=y(x)$ 上一点，记曲线 $y=y(x)$ 在点 $P$ 的法线在 $y$ 轴上的截距为 $I_{P}$，当 $I_{P}$ 最小时，求点 $P$ 的坐标。",
+    "options": null,
+    "answer": "（1）$y(x)=1+\\dfrac{x^{6}}{3}$；（2）$P\\!\\left(\\pm 1,\\dfrac{4}{3}\\right)$，此时 $I_{P}$ 取最小值 $\\dfrac{11}{6}$。",
+    "analysis": "（1）由 $xy'-6y=-6$ 得 $y'-\\dfrac{6}{x}y=-\\dfrac{6}{x}$，由一阶线性方程通解公式 $y=e^{\\int\\!\\frac{6}{x}dx}\\!\\left[\\int\\!\\left(-\\dfrac{6}{x}\\right)e^{-\\int\\!\\frac{6}{x}dx}dx+C\\right]=x^{6}\\!\\left(\\dfrac{1}{x^{6}}+C\\right)=1+Cx^{6}$。代入 $y(\\sqrt{3})=10$ 得 $C=\\dfrac{1}{3}$，故 $y(x)=1+\\dfrac{x^{6}}{3}$。（2）设 $P(x,y)$，过 $P$ 的切线方程为 $Y-y=2x^{5}(X-x)$，法线方程为 $Y-y=-\\dfrac{1}{2x^{5}}(X-x)$。令 $X=0$，得 $I_{P}=Y=1+\\dfrac{x^{6}}{3}+\\dfrac{1}{2x^{4}}$（$I_{P}$ 为偶函数，只需考虑 $x>0$）。令 $I_{P}'=2x^{5}-\\dfrac{2}{x^{5}}=0$ 得 $x=1$。又 $I_{P}''(1)=20>0$，故 $x=1$ 为唯一极小值点即最小值点，此时 $P=\\!\\left(1,\\dfrac{4}{3}\\right)$，由对称性 $P=\\!\\left(-1,\\dfrac{4}{3}\\right)$ 也使 $I_{P}$ 最小，$I_{\\min}=\\dfrac{11}{6}$。",
+    "knowledge": [
+      "常微分方程",
+      "一元微分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-21",
+    "year": 2021,
+    "type": "big",
+    "number": 21,
+    "subject": "考研数学二",
+    "stem": "曲线 $(x^{2}+y^{2})^{2}=x^{2}-y^{2}\\,(x\\ge 0,\\ y\\ge 0)$ 与 $x$ 轴围成的区域为 $D$，求 $\\displaystyle\\iint\\limits_{D}xy\\,dxdy$。",
+    "options": null,
+    "answer": "$\\dfrac{1}{48}$",
+    "analysis": "化为极坐标：令 $x=r\\cos\\theta,\\ y=r\\sin\\theta$，曲线方程为 $r^{2}=\\cos 2\\theta$。$D$ 对应 $0\\le\\theta\\le\\dfrac{\\pi}{4},\\ 0\\le r\\le\\sqrt{\\cos 2\\theta}$。$\\iint\\limits_{D}xy\\,dxdy=\\int_{0}^{\\frac{\\pi}{4}}d\\theta\\int_{0}^{\\sqrt{\\cos 2\\theta}}r^{3}\\sin\\theta\\cos\\theta\\,dr=\\int_{0}^{\\frac{\\pi}{4}}\\dfrac{1}{4}\\cos^{2}2\\theta\\sin\\theta\\cos\\theta\\,d\\theta=\\dfrac{1}{8}\\int_{0}^{\\frac{\\pi}{4}}\\cos^{2}2\\theta\\sin 2\\theta\\,d\\theta$。令 $u=\\sin 2\\theta$，$=\\dfrac{1}{16}\\int_{0}^{1}(1-u^{2})u\\,du=\\dfrac{1}{16}\\!\\left(1-\\dfrac{2}{3}\\right)=\\dfrac{1}{48}$。",
+    "knowledge": [
+      "二重积分"
+    ],
+    "difficulty": "中等",
+    "image": null
+  },
+  {
+    "id": "math2-2021-22",
+    "year": 2021,
+    "type": "big",
+    "number": 22,
+    "subject": "考研数学二",
+    "stem": "设矩阵 $A=\\begin{pmatrix}2&1&0\\\\1&2&0\\\\1&a&b\\end{pmatrix}$ 仅有两个不同的特征值，若 $A$ 相似于对角矩阵，求 $a,b$ 的值，并求可逆矩阵 $P$，使 $P^{-1}AP$ 为对角矩阵。",
+    "options": null,
+    "answer": "当 $b=1$ 时 $a=1$，$P=\\begin{pmatrix}-1&0&1\\\\1&0&1\\\\0&1&1\\end{pmatrix}$，$P^{-1}AP=\\begin{pmatrix}1&&\\\\&1&\\\\&&3\\end{pmatrix}$；当 $b=3$ 时 $a=-1$，$P=\\begin{pmatrix}1&0&-1\\\\1&0&1\\\\0&1&1\\end{pmatrix}$，$P^{-1}AP=\\begin{pmatrix}3&&\\\\&3&\\\\&&1\\end{pmatrix}$。",
+    "analysis": "$|\\lambda E-A|=\\begin{vmatrix}\\lambda-2&-1&0\\\\-1&\\lambda-2&0\\\\-1&-a&\\lambda-b\\end{vmatrix}=(\\lambda-b)[(\\lambda-2)^{2}-1]=(\\lambda-b)(\\lambda-1)(\\lambda-3)=0$。因为 $A$ 仅有两个不同特征值，故 $b=1$ 或 $b=3$。（1）当 $b=1$ 时，特征值为 $\\lambda_{1}=\\lambda_{2}=1,\\ \\lambda_{3}=3$。$A$ 可对角化，故 $r(E-A)=1$。$E-A=\\begin{pmatrix}-1&-1&0\\\\-1&-1&0\\\\-1&-a&0\\end{pmatrix}\\to\\begin{pmatrix}-1&-1&0\\\\0&0&0\\\\0&1-a&0\\end{pmatrix}$，得 $a=1$。$(E-A)x=0$ 的基础解系为 $\\alpha_{1}=(-1,1,0)^{T},\\ \\alpha_{2}=(0,0,1)^{T}$，$(3E-A)x=0$ 的基础解系为 $\\alpha_{3}=(1,1,1)^{T}$。令 $P=(\\alpha_{1},\\alpha_{2},\\alpha_{3})=\\begin{pmatrix}-1&0&1\\\\1&0&1\\\\0&1&1\\end{pmatrix}$，则 $P^{-1}AP=\\mathrm{diag}(1,1,3)$。（2）当 $b=3$ 时，特征值为 $\\lambda_{1}=\\lambda_{2}=3,\\ \\lambda_{3}=1$。由 $r(3E-A)=1$，$3E-A=\\begin{pmatrix}1&-1&0\\\\-1&1&0\\\\-1&-a&0\\end{pmatrix}\\to\\begin{pmatrix}1&-1&0\\\\0&0&0\\\\0&-1-a&0\\end{pmatrix}$，得 $a=-1$。$(3E-A)x=0$ 的基础解系为 $\\alpha_{1}=(1,1,0)^{T},\\ \\alpha_{2}=(0,0,1)^{T}$，$(E-A)x=0$ 的基础解系为 $\\alpha_{3}=(-1,1,1)^{T}$。令 $P=\\begin{pmatrix}1&0&-1\\\\1&0&1\\\\0&1&1\\end{pmatrix}$，则 $P^{-1}AP=\\mathrm{diag}(3,3,1)$。",
+    "knowledge": [
+      "特征值与特征向量"
+    ],
+    "difficulty": "较难",
+    "image": null
+  }
+]
